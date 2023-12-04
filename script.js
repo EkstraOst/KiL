@@ -9,7 +9,7 @@ menuToggle.onclick = function(){
 }
 
 //toggle light dark
-let lightToggle =document.querySelector('.lightToggle');
+let lightToggle = document.querySelector('.lightToggle');
 let body = document.querySelector('body');
 
 lightToggle.onclick = function(){

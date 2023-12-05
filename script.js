@@ -1,4 +1,4 @@
-// onclick hamburgermeny dropdown - kodet av Marius Moldeklev
+// onclick meny dropdown - kodet av Marius Moldeklev
 
 let menuToggle = document.querySelector('.menuToggle');
 let header = document.querySelector('header');

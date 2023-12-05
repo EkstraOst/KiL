@@ -8,6 +8,20 @@
     font-family: 'Roboto Slab', serif;
 }
 
+.moonIcon {
+    display: none;
+}
+.sunIcon {
+    z-index: 10;
+    display: none;
+}
+.divHeaderSpacing {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
 body {
     min-height: 100vh;
     background: #E5E5E4;
@@ -15,9 +29,12 @@ body {
 
 .darkMode {
     background: #414141;
-    color: #fff
-    
+    color: #fff;
 
+    
+}
+.logoSmall {
+ display: none;   
 }
 header {
     position: absolute;
@@ -89,13 +106,20 @@ header ul li ul li ul {
 }
 
 @media (max-width: 900px) {
+.logo{
+    display: none;
+}
+.logoSmall {
+    display: block;
+    height: 75px;
+}
     header{
         padding: 10px 20px;
     }
     header nav {
         position: absolute;
         width: 100%;
-        top: 66px;
+        top: 95px;
         left: 0;
         background: #445964;
         display: none;
@@ -103,6 +127,7 @@ header ul li ul li ul {
     }
     header.active nav {
         display: initial;
+        
         
     }
     header nav ul li {

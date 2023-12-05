@@ -1,7 +1,44 @@
 :root {
-    -main-red:#D90000; 
-    -grey: #E5E5E4;
+    --main-red:#D90000; 
+    --hover-red: #fd0101;
+    --grey: #E5E5E4;
+    --drop-grey: #445964;
     /*dark mode*/
-    -dark-grey: #414141;
-    -white: #fff;
+    --dark-grey: #414141;
+    --white: #fff;
+}
+
+.sportsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap will need adjusting accordingly*/
+    gap: 2em;
+    padding: 1rem;
+}
+
+.divCard {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5em;
+}
+
+.infoCard {
+    border: 1px solid var(--dark-grey);
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 28em;
+    text-align: center;
+}
+
+.imgBox {
+    border: 1px solid var(--dark-grey);
+    border-radius: 10px;
+    max-width:28em;
+}
+
+.karate {
+    /*adjust for img from html*/
+    width: 0px;
 }

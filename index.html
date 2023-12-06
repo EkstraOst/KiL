@@ -4,59 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleMarius.css"/>
+    <link rel="stylesheet" href="styleTiril.css"/>
+    <link rel="stylesheet" href="styleP.css"/>
     <script src="script.js" defer></script>
     <title>Knarvik Idrettslag - Aktivitet for alle</title>
 </head>
 <body>
     <header>
         <!-- All kode i header er laget av Marius Moldeklev -->
-        <a href="#" class="logo">Fantastisk Flott Logo</a>
-        <div class="menuToggle"></div>
-        <div class="lightToggle">[test]</div>
-        <nav>
-            <ul>
-            <li><a href="#">Hjem</a></li>
-            <li><a href="#">Nyheter</a></li>
-            <li><a href="#">Aktiviteter</a></li>
-            <li><a href="#">Medlemskap</a></li>
-            <li><a href="#">Sport<b>▼</b></a>
-                <ul>
-                    <li><a href="#">Fotball</a></li>
-                    <li><a href="#">Håndball</a></li>
-                    <li><a href="#">Tur/Kano</a></li>
-                    <li><a href="#">Karate</a></li>
-                    <li><a href="#">Idrettskule</a></li>
-                    <li><a href="#">Orientering</a></li>
-                    <li><a href="#">Ski</a></li>
-                </ul></li>
-            <li><a href="#">Om oss</a></li>
-            </ul>
-        </nav>
+        <div class="divHeaderSpacing">
 
+            <div class="divHeaderSpacing1">
+                <img class="logo" src="Assets/Logo/logo knarvik idrettslag.png" alt="">
+                <img class="logoSmall" src="Assets/Logo/rdog_hvit_logo.png" alt="">
+            </div>
+            <div class="divHeaderSpacing1">
+                <div class="menuToggle divHeaderSpacing1"></div>
+            </div>
+            <div class="lightToggle"><img class="lightToggle imgToggle moonImg " src="Assets/Icons/darkModeToggleButton.png" alt="">
+            <img class="lightToggle sunIcon" src="Assets/Icons/lightModeToggleButton.png" alt="">      
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Hjem</a></li>
+                    <li><a href="#">Nyheter</a></li>
+                    <li><a href="#">Aktiviteter</a></li>
+                    <li><a href="#">Medlemskap</a></li>
+                    <li><a href="#">Sport<b>▼</b></a>
+                        <ul>
+                            <li><a href="#">Fotball</a></li>
+                            <li><a href="#">Håndball</a></li>
+                            <li><a href="#">Karate</a></li>
+                            <li><a href="#">Tur/Kano</a></li>
+                            <li><a href="#">Idrettskule</a></li>
+                            <li><a href="#">Orientering</a></li>
+                            <li><a href="#">Ski</a></li>
+                        </ul></li>
+                    <li><a href="#">Om oss</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <main>
+        <!-- Laga av Tiril -->
+        <!-- Splash video -->
+        <section class="splashContainer">
+            <div class="videoContainer">
+                <video autoplay muted loop>
+                    <!-- Her er ein eksempel video-->
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+                </video>
+                <!-- Liste over splash -->
+                <div class="caption">
+                <ul class="wordsV">
+                    <li>Inkludering</li>
+                    <li>Trygghet</li>
+                    <li>Mestring</li>
+                    <li>Utvikling</li>
+                </ul>
+                </div>
+            </div>
+            </video>
+        </section>
+ 
         <section class="flexContainer">
             <h1>Knarvik Idrettslag</h1>
             <h4>Aktivitet for alle</h4>
-            <div>
-                <p></p>
-            </div>
+            <p>
+                Knarvik IL er et fleridrettslag som vil skape idrettsglede, tilhørighet og mestring 
+                ved å aktivisere barn, unge og voksne i et trygt og inkluderende miljø
+            </p>
         </section>
         <!--imgSplash or lineBreak -->
 
         <section class="sportsContainer">
-            <div class="sport1">
-                <div class="infoCard"></div>
-                <div class=""><!-- img(/s) and calendar --></div>
+            <!--Fotball-->
+            <div class="fotball divCard">
+                <div class="infoCard">
+                    <h3>Fotball</h3>
+                    <p></p>
+                </div>
+                <div class="imgBox"><!-- img(/s) and calendar --></div>
             </div>
-
-            <div class="sport2">
-                <div class="infoCard"></div>
-                <div class=""><!-- img(/s) and calendar --></div>
+            <!--Håndball-->
+            <div class="håndball divCard">
+                <div class="imgBox"><!-- img(/s) and calendar --></div>
+                <div class="infoCard">
+                    <h3>Håndball</h3>
+                    <p></p>
+                </div>
             </div>
-
-            <div class="karate">
+            <!--Karate-->
+            <div class="karate divCard">
                 <div class="infoCard">
                     <!-- tekst fra Gro Helen, fra KiL-->
                     <h3>Shorin-Ryu Karate</h3>
@@ -66,32 +107,52 @@
                         Vi har fortløpende opptak.
 
                         Kom gjerne og se på, eller tren med fra start. Du trenger ikke kunne noe 
-                        om kampsport/kampkunst fra før av, eller å være sterk og i god form! 
+                        om kampsport eller kampkunst fra før av, eller å være sterk og i god form! 
                         
                         For mer informasjon, inkl. treningssted og -tider. se knarvikkarate.no</p>
                 </div>
-                <div class=""><!-- img(/s) and calendar --></div>
+                <div class="imgBox"> 
+                    <img src="" alt=""><!-- img(/s) and calendar --></div>
             </div>
-
-            <div class="sport4">
-                <div class="infoCard"></div>
-                <div class=""><!-- img(/s) and calendar --></div>
+            <!--Tur-Kano-->
+            <div class="turKano divCard">
+                <div class="imgBox"><!-- img(/s) and calendar --></div>
+                <div class="infoCard">
+                    <h3>Tur-Kano</h3>
+                    <p></p>
+                </div>
             </div>
-
-            <div class="sport5">
-                <div class="infoCard"></div>
-                <div class=""><!-- img(/s) and calendar --></div>
+            <!--Idrettsskole-->
+            <div class="idrettsskole divCard">
+                <div class="infoCard">
+                    <h3>Idrettsskole</h3>
+                    <p></p>
+                </div>
+                <div class="imgBox"><!-- img(/s) and calendar --></div>
             </div>
-
-            <div class="sport6">
-                <div class="infoCard"></div>
-                <div class=""><!-- img(/s) and calendar --></div>
+            <!--Orientering-->
+            <div class="orientering divCard">
+                <div class="imgBox"><!-- img(/s) and calendar --></div>
+                <div class="infoCard">
+                    <h3>Orientering</h3>
+                    <p></p>
+                </div>
             </div>
-
+            <!--Ski-->
+            <div class="ski divCard"> 
+                <div class="infoCard">
+                    <h3>Ski</h3>
+                    <p></p>
+                </div>
+                <div class="">  <!-- img(/s) and calendar -->  </div>
+            </div>
             <!-- Frisbeegolf
-                <div class="sport7">  
-                <div class="infoCard"></div>
-                <div class="">  <- img(/s) and calendar ->  </div>
+                <div class="sport7 divCard">  
+                    <div class="">  <- img(/s) and calendar ->  </div>
+                    <div class="infoCard">
+                        <h3></h3>
+                        <p></p>
+                    </div>
             </div> -->
         </section>
 

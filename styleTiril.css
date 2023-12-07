@@ -49,3 +49,117 @@
     left: 50%;
     transform: translate(-50%, -50%); 
 }
+
+/* Animasjon på tekst over splash */
+
+.caption .liI {
+    animation: text1 1.5s linear forwards;
+}
+   
+@keyframes text1 {
+       0% {
+           transform: translateY(-200px) scaleY(0.9);
+           opacity: 0;
+       }
+       5% {
+           opacity: 0;
+       }
+       50% {
+           transform: translateY(0px) scaleY(1);
+           opacity: 0;
+       }
+       
+       100% {
+           transform: translateY(0px) scaleY(1);
+           opacity: 1;
+       }
+}
+   
+.caption .liI {
+       animation-delay: 0.2s;
+       opacity: 0;
+}
+
+.caption .liT {
+    animation: text2 2.5s linear forwards;
+}
+   
+@keyframes text2 {
+       0% {
+           transform: translateY(-200px) scaleY(0.9);
+           opacity: 0;
+       }
+       5% {
+           opacity: 0;
+       }
+       50% {
+           transform: translateY(0px) scaleY(1);
+           opacity: 0;
+       }
+       
+       100% {
+           transform: translateY(0px) scaleY(1);
+           opacity: 1;
+       }
+}
+   
+.caption .liT {
+       animation-delay: 0.4s;
+       opacity: 0;
+}
+
+.caption .liM {
+    animation: text3 3.5s linear forwards;
+}
+   
+@keyframes text3 {
+       0% {
+           transform: translateY(-200px) scaleY(0.9);
+           opacity: 0;
+       }
+       5% {
+           opacity: 0;
+       }
+       50% {
+           transform: translateY(0px) scaleY(1);
+           opacity: 0;
+       }
+       
+       100% {
+           transform: translateY(0px) scaleY(1);
+           opacity: 1;
+       }
+}
+   
+.caption .liM {
+       animation-delay: 0.5s;
+       opacity: 0;
+}
+
+.caption .liU {
+    animation: text4 4.5s linear forwards;
+}
+   
+@keyframes text4 {
+       0% {
+           transform: translateY(-200px) scaleY(0.9);
+           opacity: 0;
+       }
+       5% {
+           opacity: 0;
+       }
+       50% {
+           transform: translateY(0px) scaleY(1);
+           opacity: 0;
+        }
+       
+       100% {
+           transform: translateY(0px) scaleY(1);
+           opacity: 1;
+       }
+}
+   
+.caption .liU {
+       animation-delay: 0.6s;
+       opacity: 0;
+}

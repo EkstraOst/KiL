@@ -79,6 +79,7 @@ header ul li a:hover {
     background: #fd0101;
 }
 
+
 header ul li ul {
     position: absolute;
     left: 0;
@@ -88,9 +89,22 @@ header ul li ul {
     -webkit-transition: height 0.3s ease;
     transition: height 0.3s ease;
 }
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 header ul li:hover ul {
     display: block;
-    height: auto;
+    animation: fadeInDown 0.5s ease forwards;
+    
 
 }
 

@@ -1,0 +1,257 @@
+/*Styling kode til navbar og light/dark mode, kodet av Marius Moldeklev*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+.moonIcon {
+    display: none;
+}
+.sunIcon {
+    z-index: 10;
+    display: none;
+}
+.divHeaderSpacing {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+body {
+    min-height: 100vh;
+    background: #E5E5E4;
+}
+
+.darkMode {
+    background: #414141;
+    color: #fff;
+
+    
+}
+.logoSmall {
+ display: none;   
+}
+header {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    min-height: 66px;
+    background: #D90000;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .5s ease;
+}
+header .logo {
+    color: #fff;
+    font-size: 1.75em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+header ul {
+    position: relative;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    float: left;
+}
+
+header ul li a {
+    color: #fff;
+    font-size: 1.1em;
+    padding: 20px 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content:  space-between;
+  
+}
+
+header ul li a:hover {
+    background: #fd0101;
+}
+
+
+header ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #445964;
+    display: none;
+    -webkit-transition: height 0.3s ease;
+    transition: height 0.3s ease;
+}
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+header ul li:hover ul {
+    display: block;
+    animation: fadeInDown 0.5s ease forwards;
+    
+
+}
+
+header ul li ul li {
+    position: relative;
+    width: 100%;
+    border:  1px solid rgba(0,0,0,0.2);
+}
+
+header ul li ul li ul {
+    top:  0;
+    left: 200px;
+
+}
+
+@media (max-width: 900px) {
+.logo{
+    display: none;
+}
+.logoSmall {
+    display: block;
+    height: 75px;
+}
+    header{
+        padding: 10px 20px;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        top: 95px;
+        left: 0;
+        background: #445964;
+        display: none;
+    
+    }
+    header.active nav {
+        display: initial;
+        
+        
+    }
+    header nav ul li {
+        width: 100%;
+    }
+    header nav ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+    header ul li ul li ul {
+        top: 0;
+        left: 0;
+
+    }
+    header nav ul li:hover ul li {
+        background: #546e7b;
+    }
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuToggle::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        transform: translateY(-12px);
+        box-shadow: 0 12px #fff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .menuToggle::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        transform: translateY(12px);
+        transition: transform 0.3s ease; /* Added transition for transform */
+    }
+
+    header.active .menuToggle::before {
+        transform: rotate(45deg);
+        box-shadow: 0 0 #fff;
+    }
+
+    header.active .menuToggle::after {
+        transform: rotate(315deg);
+    }
+}
+
+.medlemsknapp {
+    display:flex;
+  justify-content:center;
+    align-items:center;
+    position: relative;
+    height: 50px;
+    width: 100px;
+    border-left: 2px solid red;
+    overflow: hidden;
+  }
+  .medlemsknapp:after,
+  .medlemsknapp:before {
+    position: absolute;
+    content: '';
+    width: calc(100% - 2px);
+    left: 0px;
+    z-index: -1;
+  }
+  .medlemsknapp:before {
+    height: 20%;
+    top: 0px;
+    border: 2px solid red;
+    border-width: 2px 3px 0px 0px;
+    transform: skew(45deg);
+    transform-origin: right bottom;
+    
+  }
+  .medlemsknapp:after {
+    height: calc(80% - 4px);
+    bottom: 0px;
+    border: 2px solid red;
+    border-width: 0px 2px 2px 0px;
+  }
+  .filled:before, .filled:after {
+    background-color: red;
+  }
+  
+  /* Just for demo */
+  
+  .medlemsknapp {
+    float: left;
+    color: white;
+    padding: 10px;
+    transition: all 1s;
+    margin: 100px 10px;
+  }
+  .medlemsknapp:hover {
+    height: 75px;
+    width: 125px;
+  }
+  .medlemsknapp.filled{
+    color: black;
+  }
+  

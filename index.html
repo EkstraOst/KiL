@@ -3,39 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knarvik idrettslag</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleMarius.css"/>
+    <link rel="stylesheet" href="styleTiril.css"/>
+    <link rel="stylesheet" href="styleP.css"/>
     <script src="script.js" defer></script>
+
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Fantastisk Flott Logo</a>
-    <div class="menuToggle"></div>
-    <div class="lightToggle">[test]</div>
-    <nav>
-        <ul>
-        <li><a href="#">Hjem</a></li>
-        <li><a href="#">Nyheter</a></li>
-        <li><a href="#">Aktiviteter</a></li>
-        <li><a href="#">Medlemskap</a></li>
-        <li><a href="#">Sport<b>▼</b></a>
-            <ul>
-                <li><a href="#">Fotball</a></li>
-                <li><a href="#">Håndball</a></li>
-                <li><a href="#">Tur/Kano</a></li>
-                <li><a href="#">Karate</a></li>
-                <li><a href="#">Idrettskule</a></li>
-                <li><a href="#">Orientering</a></li>
-                <li><a href="#">Ski</a></li>
-            </ul></li>
-        <li><a href="#">Om oss</a></li>
-        </ul>
-    </nav>
+        <!-- All kode i header er laget av Marius Moldeklev -->
+        <div class="divHeaderSpacing">
+
+            <div class="divHeaderSpacing1">
+                <img class="logo" src="Assets/Logo/logo knarvik idrettslag.png" alt="">
+                <img class="logoSmall" src="Assets/Logo/rdog_hvit_logo.png" alt="">
+            </div>
+            <div class="divHeaderSpacing1">
+                <div class="menuToggle divHeaderSpacing1"></div>
+            </div>
+            <div class="lightToggle"><img class="lightToggle imgToggle moonImg " src="Assets/Icons/darkModeToggleButton.png" alt="">
+            <img class="lightToggle sunIcon" src="Assets/Icons/lightModeToggleButton.png" alt="">      
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Hjem</a></li>
+                    <li><a href="#">Nyheter</a></li>
+                    <li><a href="#">Aktiviteter</a></li>
+                    <li><a href="#">Medlemskap</a></li>
+                    <li><a href="#">Sport<b>▼</b></a>
+                        <ul>
+                            <li><a href="#">Fotball</a></li>
+                            <li><a href="#">Håndball</a></li>
+                            <li><a href="#">Karate</a></li>
+                            <li><a href="#">Tur/Kano</a></li>
+                            <li><a href="#">Idrettskule</a></li>
+                            <li><a href="#">Orientering</a></li>
+                            <li><a href="#">Ski</a></li>
+                        </ul></li>
+                    <li><a href="#">Om oss</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
+        <!-- Laga av Tiril -->
+        <!-- Splash video -->
+        <section class="splashContainer">
+            <div class="videoContainer">
+                <video autoplay muted loop>
+                    <!-- Her er ein eksempel video-->
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+                </video>
+                <!-- Liste over splash -->
+                <div class="caption">
+                <ul class="wordsV">
+                    <li class="liI">Inkludering</li>
+                    <li class="liT">Trygghet</li>
+                    <li class="liM">Mestring</li>
+                    <li class="liU">Utvikling</li>
+                </ul>
+                </div>
+            </div>
+        </video>
+    </section>
+    <div class="medlemsknapp"> Bli Medlem</div>
+    
+        <section class="flexContainer">
+            <h1>Knarvik Idrettslag</h1>
+            <h4>Aktivitet for alle</h4>
+            <p>
+                Knarvik IL er et fleridrettslag som vil skape idrettsglede, tilhørighet og mestring 
+                ved å aktivisere barn, unge og voksne i et trygt og inkluderende miljø
+            </p>
+        </section>
+        <!--imgSplash or lineBreak -->
+        
+        <section class="sportsContainer">
+            <!--Fotball-->
+            <div class="fotball divCard">
+                <div class="infoCard">
+                    <h3>Fotball</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis 
+                        molestias nesciunt rerum expedita optio quia, a qui voluptates 
+                        atque voluptatem. Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="imgBox"><!-- img(/s) and calendar --></div>
+            </div>
+            <!--Håndball-->
+            <div class="håndball divCard">
+                <div class="imgBox"><!-- img(/s) and calendar --></div>
+                <div class="infoCard">
+                    <h3>Håndball</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Atque nesciunt ullam ipsa quia optio soluta neque, cupiditate 
+                        voluptatem, facilis veritatis architecto ut eveniet ab quam dicta 
+                        reprehenderit voluptate. Veritatis, optio?</p>
+                </div>
+            </div>
+            <!--Karate-->
+            <div class="karate divCard">
+                <div class="infoCard">
+                    <!-- tekst fra Gro Helen, fra KiL-->
+                    <h3>Shorin-Ryu Karate</h3>
+                    <p> Knarvik Shorin-Ryu Karate er en liten gruppe som trener tradisjonell 
+                        karate og kobudo (våpen) fra Okinawa. Vi møtes to ganger i uken, i 
+                        Knarvik Arena. Nye medlemmer fra 12 år og oppover er hjertelig velkommen. 
+                        Vi har fortløpende opptak.
 
+                        Kom gjerne og se på, eller tren med fra start. Du trenger ikke kunne noe 
+                        om kampsport eller kampkunst fra før av, eller å være sterk og i god form! 
+                        
+                        For mer informasjon, inkl. treningssted og -tider se knarvikkarate.no</p>
+                        <!-- Legg in aktiv link til knarvikkarate.no -->
+                </div>
+                <div class="imgBox"> 
+                    <img src="" alt=""><!-- img(/s) and calendar --></div>
+            </div>
+            <!--Tur-Kano-->
+            <div class="turKano divCard">
+                <div class="imgBox"><!-- img(/s) and calendar --></div>
+                <div class="infoCard">
+                    <h3>Tur-Kano</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Maxime aut eius optio dolorem dignissimos. Tenetur, inventore! 
+                        Error ullam autem sit voluptatibus praesentium in laudantium tempora.</p>
+                </div>
+            </div>
+            <!--Idrettsskole-->
+            <div class="idrettsskole divCard">
+                <div class="infoCard">
+                    <h3>Idrettsskole</h3>
+                    <p>Idrettsskulen er eit tilbod til born i alderen 4-12 år. Målet er 
+                        å tilby allsidig aktivitet som vil skape idrettsglede, tilhørighet og mestring.
 
+                        Idrettsskulen tilbyr bading i Alversund symjehall annakvar fredag. 
+                        Borna i barnehagealder har og tilbod om trening og leik i Knarvik Arena annakvar 
+                        mandag.</p>
+                </div>
+                <div class="imgBox"><!-- img(/s) and calendar --></div>
+            </div>
+            <!--Orientering-->
+            <div class="orientering divCard">
+                <div class="imgBox"><!-- img(/s) and calendar --></div>
+                <div class="infoCard">
+                    <h3>Orientering</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsa eveniet deleniti non quibusdam unde quaerat aliquam accusantium 
+                        dolores beatae omnis temporibus, voluptatem molestiae!
+                    </p>
+                </div>
+            </div>
+            <!--Ski-->
+            <div class="ski divCard"> 
+                <div class="infoCard">
+                    <h3>Ski</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Omnis harum assumenda eos tempora accusamus perferendis adipisci 
+                        rem fugit quo repudiandae hic odio natus, veniam eaque.</p>
+                </div>
+                <div class="imgBox">  <!-- img(/s) and calendar -->  </div>
+            </div>
+            <!-- Frisbeegolf
+                <div class="sport7 divCard">  
+                    <div class="imgBox">  <- img(/s) and calendar ->  </div>
+                    <div class="infoCard">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+            </div> -->
+        </section>
+
+        <section>
+            <div class="calendarApi"></div>
+            <!-- imgSplash: samleGalleri? -->
+            <!-- div: Åpen hall info -->
+        </section>
+        <!-- div eller section for Politiattest-skjema link? -->
     </main>
-    <footer></footer>
+
+    <footer>
+        <div class="contactInfo">
+
+        </div>
+    </footer>
 </body>
 </html>

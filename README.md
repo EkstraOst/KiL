@@ -5,6 +5,7 @@
 
     - Marius: Er det mulig å legge inn en delayed trasition på dropdown meny?
 
+    - note to self: se over skrivefeil!
 
 
 

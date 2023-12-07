@@ -8,6 +8,12 @@
     --white: #fff;
 }
 
+.flexContainer {
+    margin-top: 20px;
+    margin-bottom: 65px;
+    gap: 2em;
+}
+
 .sportsContainer {
     display: flex;
     justify-content: space-around;

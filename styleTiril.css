@@ -2,6 +2,7 @@
 
 :root {
     --text: #0f0f0f;
+    --textShadow: #ffffff;
 }
 
 .flexContainer {
@@ -25,6 +26,7 @@
     font-weight: bold;
     font-size: 30px;
     z-index: 1;
+    text-shadow: 1px 1px 12px var(--textShadow);
 }
 
 .videoContainer {

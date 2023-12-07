@@ -10,10 +10,12 @@
 
 .moonIcon {
     display: none;
+    cursor: pointer;
 }
 .sunIcon {
     z-index: 10;
     display: none;
+    cursor: pointer;
 }
 .divHeaderSpacing {
     width: 100%;
@@ -77,6 +79,32 @@ header ul li a {
 
 header ul li a:hover {
     background: #fd0101;
+}
+
+header ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #445964;
+    display: none;
+    -webkit-transition: height 0.3s ease;
+    transition: height 0.3s ease;
+}
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+header ul li:hover ul {
+    display: block;
+    animation: fadeInDown 0.5s ease forwards;
 }
 
 

@@ -1,3 +1,4 @@
+/*Hovedfarger i bruk på siden*/
 :root {
     --main-red:#D90000; 
     --hover-red: #fd0101;
@@ -8,6 +9,7 @@
     --white: #fff;
 }
 
+/*Main class styling*/
 .flexContainer {
     margin-top: 20px;
     margin-bottom: 65px;
@@ -53,16 +55,21 @@
     min-width:28em;
 }
 
+/*Egne klasser til bildene for å kunne justere dem riktig i henhold til imgBox*/
 .imgKarate {
     max-width: 29em;
     max-height: 29em;
     border-radius: 10px;
 }
 
-/* .karate {
-    //adjust for img from html
-    width: 28em;
-} */
+
+
+/*footer*/
+.contactInfo {
+    background-color: var(--main-red);
+    width: 100%;
+    min-height: 66px;
+}
 
 
 

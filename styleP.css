@@ -10,9 +10,10 @@
 
 .sportsContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    max-width: 100vw;
     /* gap will need adjusting accordingly*/
     gap: 2em;
     padding: 1rem;
@@ -25,24 +26,37 @@
 }
 
 .infoCard {
+    display: flex;
+    flex-direction: column;
     border: 1px solid var(--dark-grey);
     border-radius: 10px;
     padding: 25px;
-    max-width: 28em;
+    gap: 2rem;
+    /*adjust height and width to fit content*/
+    max-width: 30em;
     min-width:15em;
+    height: 30em;
     text-align: center;
 }
 
 .imgBox {
     border: 1px solid var(--dark-grey);
     border-radius: 10px;
-    max-width:28em;
+    max-width:30em;
+    max-height: 30em;
+    min-width:28em;
 }
 
-.karate {
-    /*adjust for img from html*/
-    width: 28em;
+.imgKarate {
+    max-width: 29em;
+    max-height: 29em;
+    border-radius: 10px;
 }
+
+/* .karate {
+    //adjust for img from html
+    width: 28em;
+} */
 
 
 

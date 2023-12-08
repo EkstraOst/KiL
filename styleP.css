@@ -41,9 +41,9 @@
     padding: 25px;
     gap: 2rem;
     /*adjust height and width to fit content*/
-    max-width: 35em;
+    max-width: 31.5em;
     /* min-width: 30em; */
-    height: 35em;
+    height: 31.5em;
     text-align: center;
 }
 
@@ -56,15 +56,15 @@
 .imgBox {
     border: 1px solid var(--dark-grey);
     border-radius: 10px;
-    max-width:35em;
-    max-height: 35em;
-    min-width:35em;
+    max-width:31.5em;
+    max-height: 31.5em;
+    min-width:31.5em;
 }
 
 /*Egne klasser til bildene for å kunne justere dem riktig i henhold til imgBox*/
 .imgKarate {
-    max-width: 34em;
-    max-height: 34em;
+    max-width: 31.4em;
+    max-height: 31em;
     border-radius: 10px;
 }
 
@@ -84,14 +84,14 @@
 /* Add media querys! */
 @media (max-width: 900px) {
     .infoCard {
-        max-width: 30em;
+        max-width: 300epx;
         min-width:20em;
-        max-height: 30;
+        max-height: 500px;
     }
     .imgBox {
-        max-width: 30em;
+        max-width: 300px;
         min-width: 20em;
-        max-height: 30;
+        /* max-height: 500px; */
     }
 }
 

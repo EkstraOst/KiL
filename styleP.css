@@ -72,10 +72,11 @@
 
 /*footer*/
 .contactInfo {
-    background-color: var(--main-red);
+    /* background-color: var(--main-red);
     width: 100%;
     min-height: 66px;
-    padding: 20px;
+    padding: 20px; */
+    margin-top: 60px;
 }
 
 

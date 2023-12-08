@@ -35,6 +35,11 @@
 
 # Footer kontakt info hentet fra gamle KiL siden
 - Må sees over om all info her er relevant.
+    - org nr
+    - adresse
+    - epost
+    - (alt som ligger øverst i brreg linken, inkl adressen)
+    - (styremedlemmer, dette kan vente litt)
 
 
 

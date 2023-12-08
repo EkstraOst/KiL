@@ -27,7 +27,7 @@
 
 
 - Felles tanker: 
-    -Hva om vi lager en -button- som sier "påmelding" i hver av idretts-div kortene i tillegg til et eget div kort(main-rød, litt tykk, border og fadet rødfarge i bakgrunn av div kortet) lenger nede på siden (før footer) og en liten dropdown under "medlemskap" i menyen?
+    -Hva om vi lager en -button- som sier "Bli medlem" i hver av idretts-div kortene i tillegg til et eget div kort(main-rød, litt tykk, border og fadet rødfarge i bakgrunn av div kortet) lenger nede på siden (før footer), endre "medlemskap" til bli "bli medlem"
     - Kalendere, klikkbar? Altså at den viser 2-3 uker også kan man trykke på den for å gå til hele kalenderen? eller - button? 
     - fixed logo-buttons på hver sin side av div-kortene, som en form for flytende meny?
     - Dark mode: fix div kortene, border og/eller bakgrunnsfarge?

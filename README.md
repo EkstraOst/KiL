@@ -31,6 +31,7 @@
     - Kalendere, klikkbar? Altså at den viser 2-3 uker også kan man trykke på den for å gå til hele kalenderen? eller - button? 
     - fixed logo-buttons på hver sin side av div-kortene, som en form for flytende meny?
     - Dark mode: fix div kortnene, border og/eller bakgrunnsfarge?
+    - Legg inn litt margin/padding mellom footer og hva enn som ender opp med å være rett over footeren, kjekt med litt "pusterom"
 
 # Footer kontakt info hentet fra gamle KiL siden
 - Må sees over om all info her er relevant.

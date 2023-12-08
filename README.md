@@ -26,7 +26,10 @@
 
 
 
-
+- Felles tanker: 
+    -Hva om vi lager en -button- som sier "påmelding" i hver av idretts-div kortene i tillegg til et eget div kort(main-rød, litt tykk, border og fadet rødfarge i bakgrunn av div kortet) lenger nede på siden (før footer) og en liten dropdown under "medlemskap" i menyen?
+    - Kalendere, klikkbar? Altså at den viser 2-3 uker også kan man trykke på den for å gå til hele kalenderen? eller - button? 
+    - fixed logo-buttons på hver sin side av div-kortene, som en form for flytende meny?
 
 # Footer kontakt info hentet fra gamle KiL siden
 - Må sees over om all info her er relevant.
@@ -49,8 +52,11 @@ kasserer@knarvikil.no
 
 - Styreleder(info fra Håvard): Grethe Midthgård Haaland
     - Kun styreleder sin info skal være tilgjengelig i footere, muligens også post@knarvikkil.no(?)
+    - organisasjons nummer og post nummer.
 
     Skal påmelding være en link til et skjema eller skal det være info om å kontakte medlem@knarvikkil.no?
+    - https://club.spond.com/landing/signup/knarvikil (?) (info landings side)
+    - https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2 (?) (påmeldings skjema?)
 
 
 

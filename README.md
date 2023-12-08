@@ -58,7 +58,7 @@ medlem@knarvikil.no    Kontaktpunkt for faktura og medlemsspørsmål
 
 kasserer@knarvikil.no   
 
-- Styreleder(info fra Håvard): Grethe Midthgård Haaland
+- Styreleder(info fra Håvard): Grethe Hildegunn Midthgård Haaland
     - Kun styreleder sin info skal være tilgjengelig i footere, muligens også post@knarvikkil.no(?)
     - organisasjons nummer og post nummer.
 

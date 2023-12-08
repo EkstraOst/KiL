@@ -23,7 +23,7 @@
 
 
 - Ø 
-
+    -Sosiale medier i footeren (Orientering har en)?
 
 
 - Felles tanker: 

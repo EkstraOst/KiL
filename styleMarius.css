@@ -32,8 +32,13 @@ body {
 .darkMode {
     background: #414141;
     color: #fff;
-
-    
+    /*Pardon me Marius, Polly justerer litt*/
+    .infoCard {
+        border: 1px solid #E5E5E4;
+    }
+    .imgBox {
+        border: 1px solid #E5E5E4;
+    }
 }
 .logoSmall {
  display: none;   

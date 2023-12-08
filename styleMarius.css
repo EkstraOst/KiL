@@ -8,6 +8,22 @@
     font-family: 'Roboto Slab', serif;
 }
 
+.moonIcon {
+    display: none;
+    cursor: pointer;
+}
+.sunIcon {
+    z-index: 10;
+    display: none;
+    cursor: pointer;
+}
+.divHeaderSpacing {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
 body {
     min-height: 100vh;
     background: #E5E5E4;
@@ -15,11 +31,15 @@ body {
 
 .darkMode {
     background: #414141;
-    color: #fff
-    
+    color: #fff;
 
+    
+}
+.logoSmall {
+ display: none;   
 }
 header {
+    z-index: 2;
     position: absolute;
     width: 100%;
     min-height: 66px;
@@ -70,9 +90,49 @@ header ul li ul {
     -webkit-transition: height 0.3s ease;
     transition: height 0.3s ease;
 }
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 header ul li:hover ul {
     display: block;
-    height: auto;
+    animation: fadeInDown 0.5s ease forwards;
+}
+
+
+header ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #445964;
+    display: none;
+    -webkit-transition: height 0.3s ease;
+    transition: height 0.3s ease;
+}
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+header ul li:hover ul {
+    display: block;
+    animation: fadeInDown 0.5s ease forwards;
+    
 
 }
 
@@ -89,13 +149,20 @@ header ul li ul li ul {
 }
 
 @media (max-width: 900px) {
+.logo{
+    display: none;
+}
+.logoSmall {
+    display: block;
+    height: 75px;
+}
     header{
         padding: 10px 20px;
     }
     header nav {
         position: absolute;
         width: 100%;
-        top: 66px;
+        top: 95px;
         left: 0;
         background: #445964;
         display: none;
@@ -103,6 +170,7 @@ header ul li ul li ul {
     }
     header.active nav {
         display: initial;
+        
         
     }
     header nav ul li {

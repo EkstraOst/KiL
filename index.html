@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleMarius.css"/>
+    <link rel="stylesheet" href="styleP.css"/>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Knarvik Idrettslag - Aktivitet for alle</title>
@@ -38,7 +39,7 @@
     
     <main>
         
-        <!-- Laga av Tiril -->
+            <!-- Laga av Tiril -->
         <!-- Splash video -->
         <section class="splashContainer">
             <div class="videoContainer">
@@ -56,30 +57,47 @@
                 </ul>
                 </div>
             </div>
-          </video>
+            </video>
         </section>
  
         <section class="flexContainer">
             <h1>Knarvik Idrettslag</h1>
             <h4>Aktivitet for alle</h4>
             <p>
-                Knarvik IL er et fleridrettslag som vil skape idrettsglede, tilhørighet og mestring ved å aktivisere barn, unge og voksne i et trygt og inkluderende miljø
+                Knarvik IL er et fleridrettslag som vil skape idrettsglede, tilhørighet og mestring 
+                ved å aktivisere barn, unge og voksne i et trygt og inkluderende miljø
             </p>
         </section>
         <!--imgSplash or lineBreak -->
-
+        
         <section class="sportsContainer">
-            <div class="sport1">
-                <div class="infoCard"></div>
-                <div class=""><!-- img(/s) and calendar --></div>
+            <!--Fotball-->
+            <div class="fotball divCard">
+                <div class="infoCard">
+                    <h3>Fotball</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis 
+                        molestias nesciunt rerum expedita optio quia, a qui voluptates 
+                        atque voluptatem. Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="imgBox">
+                    <img src="Assets/Icons/fotball.png"/>
+                    <!-- img(/s) and calendar --></div>
             </div>
-
-            <div class="sport2">
-                <div class="infoCard"></div>
-                <div class=""><!-- img(/s) and calendar --></div>
+            <!--Håndball-->
+            <div class="håndball divCard">
+                <div class="imgBox">
+                    <img src="Assets/Icons/handball.png"/>
+                    <!-- img(/s) and calendar --></div>
+                <div class="infoCard">
+                    <h3>Håndball</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Atque nesciunt ullam ipsa quia optio soluta neque, cupiditate 
+                        voluptatem, facilis veritatis architecto ut eveniet ab quam dicta 
+                        reprehenderit voluptate. Veritatis, optio?</p>
+                </div>
             </div>
-
-            <div class="karate">
+            <!--Karate-->
+            <div class="karate divCard">
                 <div class="infoCard">
                     <!-- tekst fra Gro Helen, fra KiL-->
                     <h3>Shorin-Ryu Karate</h3>
@@ -89,45 +107,136 @@
                         Vi har fortløpende opptak.
 
                         Kom gjerne og se på, eller tren med fra start. Du trenger ikke kunne noe 
-                        om kampsport/kampkunst fra før av, eller å være sterk og i god form! 
+                        om kampsport eller kampkunst fra før av, eller å være sterk og i god form! 
                         
-                        For mer informasjon, inkl. treningssted og -tider. se knarvikkarate.no</p>
+                        For mer informasjon, inkl. treningssted og -tider se <a href="https://www.knarvikkarate.no/" target="_blank">knarvikkarate.no </a></p>
+                        <p class="location">Lokale: Knarvik Arena</p>
+                        <p>Lonsvegen 80, 5914 Knarvik</p>
+                        <!-- Legg in aktiv link til knarvikkarate.no -->
+                        <!-- Knapp til påmelding -->
+                    <button class="buttonRegistration"> 
+                        <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
+                    </button>
                 </div>
-                <div class=""><!-- img(/s) and calendar --></div>
+                <div class="imgBox"> 
+                    <img class="imgKarate" src="Assets/Karate/karate_5.jpg" alt=""/><!-- img(/s) and calendar --></div>
             </div>
-
-            <div class="sport4">
-                <div class="infoCard"></div>
-                <div class=""><!-- img(/s) and calendar --></div>
+            <!--Tur-Kano-->
+            <div class="turKano divCard">
+                <div class="imgBox">
+                    <img src="Assets/Icons/turOGkano.png"/>
+                    <!-- img(/s) and calendar --></div>
+                <div class="infoCard">
+                    <h3>Tur-Kano</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Maxime aut eius optio dolorem dignissimos. Tenetur, inventore! 
+                        Error ullam autem sit voluptatibus praesentium in laudantium tempora.</p>
+                </div>
             </div>
+            <!--Idrettsskole-->
+            <div class="idrettsskole divCard">
+                <div class="infoCard">
+                    <h3>Idrettsskole</h3>
+                    <p>Idrettsskulen er eit tilbod til born i alderen 4-12 år. Målet er 
+                        å tilby allsidig aktivitet som vil skape idrettsglede, tilhørighet og mestring.
 
-            <div class="sport5">
-                <div class="infoCard"></div>
-                <div class=""><!-- img(/s) and calendar --></div>
+                        Idrettsskulen tilbyr bading i Alversund symjehall annakvar fredag. 
+                        Borna i barnehagealder har og tilbod om trening og leik i Knarvik Arena annakvar 
+                        mandag.</p>
+                        <p class="location">Lokale: Knarvik Arena</p>
+                        <p>Lonsvegen 80, 5914 Knarvik</p>
+                </div>
+                <div class="imgBox">
+                    <imG src="Assets/Icons/idretsskole.png">
+                    <!-- img(/s) and calendar --></div>
             </div>
-
-            <div class="sport6">
-                <div class="infoCard"></div>
-                <div class=""><!-- img(/s) and calendar --></div>
+            <!--Orientering-->
+            <div class="orientering divCard">
+                <div class="imgBox">
+                    <img src="Assets/Icons/orientering.png"/>
+                    <!-- img(/s) and calendar --></div>
+                <div class="infoCard">
+                    <h3>Orientering</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsa eveniet deleniti non quibusdam unde quaerat aliquam accusantium 
+                        dolores beatae omnis temporibus, voluptatem molestiae!
+                    </p>
+                </div>
             </div>
-
+            <!--Ski-->
+            <div class="ski divCard"> 
+                <div class="infoCard">
+                    <h3>Ski</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Omnis harum assumenda eos tempora accusamus perferendis adipisci 
+                        rem fugit quo repudiandae hic odio natus, veniam eaque.</p>
+                </div>
+                <div class="imgBox"> 
+                    <img src="Assets/Icons/ski.png"/> 
+                    <!-- img(/s) and calendar -->  </div>
+            </div>
             <!-- Frisbeegolf
-                <div class="sport7">  
-                <div class="infoCard"></div>
-                <div class="">  <- img(/s) and calendar ->  </div>
+                <div class="sport7 divCard">  
+                    <div class="imgBox">  <- img(/s) and calendar ->  </div>
+                    <div class="infoCard">
+                        <h3></h3>
+                        <p></p>
+                    </div>
             </div> -->
         </section>
 
         <section>
             <div class="calendarApi"></div>
+            <!-- imgSplash: samleGalleri? -->
             <!-- div: Åpen hall info -->
         </section>
         <!-- div eller section for Politiattest-skjema link? -->
     </main>
+    </main>
 
     <footer>
         <div class="contactInfo">
+            <div>
+                <p class="space">
+                   E-post
+                </p>
+                <p>
+                    <a href="mailto:leder@knarvikil.no">leder@knarvikil.no</a></p>
+                </p>
+            </div>
 
+            <div >
+                <p class="space">
+                    Adresse
+                </p>
+                <p>
+                    v/Grethe Hildegunn Midtgård Haaland
+                </p>
+                <p class="space">
+                    Røsvikrenen 7
+                </p>
+                <p >
+                    5914 ISDALSTØ
+                </p>
+            </div>
+
+            <div>
+                <p class="space">
+                    Organisasjonsnummer
+                </p>
+                <p>
+                    974 953 498
+                </p>
+            </div>
+
+            <div>
+                <p class="space">
+                    Foretaksnavn
+                </p>
+                <p>
+                    KNARVIK IDRETTSLAG
+                </p>  
+            </div>
         </div>
     </footer>
 </body>

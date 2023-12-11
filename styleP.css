@@ -81,6 +81,12 @@
 
 
 
+.mobileDivCard {
+    display: none;
+}
+
+
+
 
 /* Add media querys! */
 @media (max-width: 900px) {
@@ -93,6 +99,42 @@
         max-width: 300px;
         min-width: 20em;
         /* max-height: 500px; */
+    }
+}
+
+@media (max-width: 426px) {
+    .flexContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        margin-left: 5px;
+    }
+    .sportsContainer {
+        display: none;
+    }
+    .mobileDisplay {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .mobileDivCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        width: 85%;
+        gap: 1em;
+        border: 1px solid var(--dark-grey);
+        border-radius: 10px;
+        margin:10px;
+    }
+    .mobileImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%; 
     }
 }
 

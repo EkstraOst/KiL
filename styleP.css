@@ -45,6 +45,7 @@
     /* min-width: 30em; */
     height: 31.5em;
     text-align: center;
+    box-shadow: 5px 5px 5px #404040ac;
 }
 
 .location {
@@ -59,6 +60,7 @@
     max-width:31.5em;
     max-height: 31.5em;
     min-width:31.5em;
+    box-shadow: 5px 5px 5px #404040ac;
 }
 
 /*Egne klasser til bildene for å kunne justere dem riktig i henhold til imgBox*/

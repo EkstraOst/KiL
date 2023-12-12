@@ -314,3 +314,11 @@ header ul li ul li ul {
   .side-icon:hover .icon-text {
     opacity: 1;
   }
+  
+  .colorChange {
+    color: white;
+    
+  }
+  .colorChange:hover {
+    cursor: pointer;
+  }

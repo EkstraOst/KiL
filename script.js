@@ -86,36 +86,6 @@ for (let i = 0; i < 8; i++) {
             });
           });
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     const sideIconsContainer = document.getElementById('side-icons');
-//     const idNameDisplay = document.getElementById('id-name-display');
-  
-//     // Create side icons
-//     const icons = ['fotball.png', 'handball.png', 'karate.png', 'turOGkano.png', 'idretsskole.png', 'orientering.png', 'ski.png', 'åpen hall.png']; // Add your icon filenames
-//     icons.forEach(icon => {
-//       const sideIcon = document.createElement('div');
-//       sideIcon.className = 'side-icon';
-//       const img = document.createElement('img');
-//       img.src = icon;
-//       img.alt = icon.replace(/\.[^/.]+$/, ''); // Extract filename without extension
-//       sideIcon.appendChild(img);
-//       sideIconsContainer.appendChild(sideIcon);
-//     });
-  
-//     // Handle hover effect to display ID name
-//     sideIconsContainer.addEventListener('mouseover', function (event) {
-//       if (event.target.classList.contains('side-icon')) {
-//         const iconName = event.target.querySelector('img').alt;
-//         idNameDisplay.textContent = iconName;
-//         idNameDisplay.style.display = 'block';
-//       }
-//     });
-  
-//     // Handle mouseout to hide ID name
-//     sideIconsContainer.addEventListener('mouseout', function () {
-//       idNameDisplay.style.display = 'none';
-//     });
-//   });
-  
+
   
   

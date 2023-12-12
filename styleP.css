@@ -1,3 +1,4 @@
+/*Hovedfarger i bruk på siden*/
 :root {
     --main-red:#D90000; 
     --hover-red: #fd0101;
@@ -8,11 +9,19 @@
     --white: #fff;
 }
 
+/*Main class styling*/
+.flexContainer {
+    margin-top: 20px;
+    margin-bottom: 65px;
+    gap: 2em;
+}
+
 .sportsContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    max-width: 100vw;
     /* gap will need adjusting accordingly*/
     gap: 2em;
     padding: 1rem;
@@ -25,26 +34,111 @@
 }
 
 .infoCard {
+    display: flex;
+    flex-direction: column;
     border: 1px solid var(--dark-grey);
     border-radius: 10px;
     padding: 25px;
-    max-width: 28em;
-    min-width:15em;
+    gap: 2rem;
+    /*adjust height and width to fit content*/
+    max-width: 31.5em;
+    /* min-width: 30em; */
+    height: 31.5em;
     text-align: center;
+}
+
+.location {
+    margin-top: 30px;
+    text-decoration: underline;
+    font-weight: bolder;
 }
 
 .imgBox {
     border: 1px solid var(--dark-grey);
     border-radius: 10px;
-    max-width:28em;
+    max-width:31.5em;
+    max-height: 31.5em;
+    min-width:31.5em;
 }
 
-.karate {
-    /*adjust for img from html*/
-    width: 28em;
+/*Egne klasser til bildene for å kunne justere dem riktig i henhold til imgBox*/
+.imgKarate {
+    max-width: 31.4em;
+    max-height: 31em;
+    border-radius: 10px;
+}
+
+
+
+/*footer*/
+.contactInfo {
+    /* background-color: var(--main-red);
+    width: 100%;
+    min-height: 66px;
+    padding: 20px; */
+    margin-top: 60px;
+}
+
+
+
+.mobileDivCard {
+    display: none;
 }
 
 
 
 
 /* Add media querys! */
+@media (max-width: 900px) {
+    .infoCard {
+        max-width: 300epx;
+        min-width:20em;
+        max-height: 500px;
+    }
+    .imgBox {
+        max-width: 300px;
+        min-width: 20em;
+        object-fit: contain;
+        /* max-height: 500px; */
+    }
+}
+
+@media (max-width: 426px) {
+    .flexContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        margin-left: 5px;
+    }
+    .sportsContainer {
+        display: none;
+    }
+    .mobileDisplay {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .mobileDivCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        width: 85%;
+        gap: 1em;
+        border: 1px solid var(--dark-grey);
+        border-radius: 10px;
+        margin:10px;
+    }
+    .mobileImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+        object-fit: contain;
+        overflow: hidden;
+    }
+}
+
+/*Fix the mess above*/

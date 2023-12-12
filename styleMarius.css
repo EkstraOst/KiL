@@ -279,6 +279,7 @@ header ul li ul li ul {
     border-radius: 20%;
   }
   
+  
   .side-icon:hover {
     scale: 2;
     
@@ -297,3 +298,19 @@ header ul li ul li ul {
     display: none;
   }
   
+  .side-icon .icon-text {
+    position: absolute;
+    bottom: 20%;
+    left: -140%;
+    transform: translateX(-30%);
+    background-color: #333;
+    color: #fff;
+    padding: 0px;
+    border-radius: 1px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .side-icon:hover .icon-text {
+    opacity: 1;
+  }

@@ -23,69 +23,147 @@ menuToggle.onclick = function(){
 
     };
         
+ ///////////////////////////////////////////////////////////////////////////////////////////
 
-          document.addEventListener('DOMContentLoaded', function () {
-            const sideIconsContainer = document.getElementById('side-icons');
-          
-            // Define the paths for each icon
-            const iconPaths = [
-              'assets/icons/fotball.png',
-              'assets/icons/handball.png',
-              'assets/icons/karate.png',
-              'assets/icons/turOGkano.png',
-              'assets/icons/idretsskole.png',
-              'assets/icons/orientering.png',
-              'assets/icons/ski.png',
-              'assets/icons/åpen hall.png',
-            ];
-          
-            // Define the href links for each icon
-            const iconHrefLinks = [
-              '#fotball',
-              '#handball',
-              '#karate',
-              '#turOgKano',
-              '#idretsskole',
-              '#orientering',
-              '#ski',
-              '#åpenHall',
-            ];
-          
-   // Add icons dynamically
-for (let i = 0; i < 8; i++) {
-    const sideIcon = document.createElement('div');
-    sideIcon.className = 'side-icon';
+// document.addEventListener('DOMContentLoaded', function () {
+//     const sideIconsContainer = document.getElementById('side-icons');
   
-    // Create an img element with the appropriate src attribute
-    const imgElement = document.createElement('img');
-    imgElement.src = iconPaths[i];
-    imgElement.alt = `Icon ${i + 1}`;
+//     const iconPaths = [
+//       'assets/icons/fotball.png',
+//       'assets/icons/handball.png',
+//       'assets/icons/karate.png',
+//       'assets/icons/turOGkano.png',
+//       'assets/icons/idretsskole.png',
+//       'assets/icons/orientering.png',
+//       'assets/icons/ski.png',
+//       'assets/icons/åpen hall.png',
+//     ];
   
-    // Use a closure to capture the current value of i
-    (function (index) {
-      sideIcon.addEventListener('click', function () {
-        window.location.href = iconHrefLinks[index];
-      });
-    })(i);
+//     const iconHrefLinks = [
+//       '#fotball',
+//       '#handball',
+//       '#karate',
+//       '#turOgKano',
+//       '#idretsskole',
+//       '#orientering',
+//       '#ski',
+//       '#åpenHall',
+//     ];
   
-    sideIcon.appendChild(imgElement);
-    sideIconsContainer.appendChild(sideIcon);
-  }
+//     const iconTitles = [
+//       'Fotball',
+//       'Handball',
+//       'Karate',
+//       'Tur og Kano',
+//       'Idretsskole',
+//       'Orientering',
+//       'Ski',
+//       'Åpen Hall',
+//     ];
   
-          
-            // Handle scroll event
-            window.addEventListener('scroll', function () {
-              const scrollPosition = window.scrollY;
-          
-              // You can adjust the scroll position threshold as needed
-              if (scrollPosition > 100) {
-                sideIconsContainer.style.opacity = 1;
-              } else {
-                sideIconsContainer.style.opacity = 0;
-              }
-            });
-          });
-
-
+//     for (let i = 0; i < 8; i++) {
+//       const sideIcon = document.createElement('div');
+//       sideIcon.className = 'side-icon';
   
+//       const imgElement = document.createElement('img');
+//       imgElement.src = iconPaths[i];
+//       imgElement.alt = `Icon ${i + 1}`;
+  
+//       // Set the title attribute for hover text
+//       imgElement.title = iconTitles[i];
+  
+//       (function (index) {
+//         sideIcon.addEventListener('click', function () {
+//           window.location.href = iconHrefLinks[index];
+//         });
+//       })(i);
+  
+//       sideIcon.appendChild(imgElement);
+//       sideIconsContainer.appendChild(sideIcon);
+//     }
+  
+//     window.addEventListener('scroll', function () {
+//       const scrollPosition = window.scrollY;
+  
+//       if (scrollPosition > 100) {
+//         sideIconsContainer.style.opacity = 1;
+//       } else {
+//         sideIconsContainer.style.opacity = 0;
+//       }
+//     });
+//   });
+  
+document.addEventListener('DOMContentLoaded', function () {
+    const sideIconsContainer = document.getElementById('side-icons');
+  
+    const iconPaths = [
+      'assets/icons/fotball.png',
+      'assets/icons/handball.png',
+      'assets/icons/karate.png',
+      'assets/icons/turOGkano.png',
+      'assets/icons/idretsskole.png',
+      'assets/icons/orientering.png',
+      'assets/icons/ski.png',
+      'assets/icons/åpen hall.png',
+    ];
+  
+    const iconHrefLinks = [
+      '#fotball',
+      '#handball',
+      '#karate',
+      '#turOgKano',
+      '#idretsskole',
+      '#orientering',
+      '#ski',
+      '#åpenHall',
+    ];
+  
+    const iconTitles = [
+      'Fotball',
+      'Handball',
+      'Karate',
+      'Tur og Kano',
+      'Idretsskole',
+      'Orientering',
+      'Ski',
+      'Åpen Hall',
+    ];
+  
+    for (let i = 0; i < 8; i++) {
+      const sideIcon = document.createElement('div');
+      sideIcon.className = 'side-icon';
+  
+      const imgElement = document.createElement('img');
+      imgElement.src = iconPaths[i];
+      imgElement.alt = `Icon ${i + 1}`;
+  
+      // Set the title attribute for hover text
+      imgElement.title = iconTitles[i];
+  
+      // Create a span element for the text
+      const textElement = document.createElement('span');
+      textElement.className = 'icon-text'; // Add a class to style in CSS
+      textElement.textContent = iconTitles[i];
+  
+      (function (index) {
+        sideIcon.addEventListener('click', function () {
+          window.location.href = iconHrefLinks[index];
+        });
+      })(i);
+  
+      sideIcon.appendChild(imgElement);
+      sideIcon.appendChild(textElement); // Append the text element
+      sideIconsContainer.appendChild(sideIcon);
+    }
+  
+    window.addEventListener('scroll', function () {
+      const scrollPosition = window.scrollY;
+  
+      if (scrollPosition > 100) {
+        sideIconsContainer.style.opacity = 1;
+      } else {
+        sideIconsContainer.style.opacity = 0;
+      }
+    });
+  });
   

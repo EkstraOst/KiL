@@ -45,6 +45,7 @@
     /* min-width: 30em; */
     height: 31.5em;
     text-align: center;
+    box-shadow: 5px 5px 5px #404040ac;
 }
 
 .location {
@@ -59,10 +60,41 @@
     max-width:31.5em;
     max-height: 31.5em;
     min-width:31.5em;
+    box-shadow: 5px 5px 5px #404040ac;
 }
 
 /*Egne klasser til bildene for å kunne justere dem riktig i henhold til imgBox*/
+.imgDisplay {
+    max-width: 31.4em;
+    max-height: 31em;
+    border-radius: 10px;
+}
+
+.imgFotball {
+    max-width: 31.4em;
+    max-height: 31em;
+    border-radius: 10px;
+}
+
+.imgHåndball {
+    max-width: 31.4em;
+    max-height: 31em;
+    border-radius: 10px;
+}
+
 .imgKarate {
+    max-width: 31.4em;
+    max-height: 31em;
+    border-radius: 10px;
+}
+
+.imgTurKano {
+    max-width: 31.4em;
+    max-height: 31em;
+    border-radius: 10px;
+}
+
+.imgIdrett {
     max-width: 31.4em;
     max-height: 31em;
     border-radius: 10px;
@@ -94,6 +126,7 @@
         max-width: 300epx;
         min-width:20em;
         max-height: 500px;
+
     }
     .imgBox {
         max-width: 300px;
@@ -117,6 +150,8 @@
     .mobileDisplay {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 2em;
     }
     .mobileDivCard {
@@ -130,13 +165,13 @@
         border: 1px solid var(--dark-grey);
         border-radius: 10px;
         margin:10px;
+        box-shadow: 5px 5px 5px #404040ac;
     }
     .mobileImg {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%; 
-        object-fit: contain;
+        max-width: 18em; 
         overflow: hidden;
     }
 }

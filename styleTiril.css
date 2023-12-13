@@ -11,6 +11,8 @@
     --textFooter: #ffffff ;
 }
 
+/* Splash video */
+
 .flexContainer {
     padding-top: 100px;
     display: flex;
@@ -19,8 +21,7 @@
 }
 
 .splashContainer {
-    /*Må trolig justeres om navbar blir endret*/
-    padding-top: 148px;
+    padding-top: 65px;
 }
 
 .wordsV {
@@ -30,7 +31,7 @@
     align-items: center;
     list-style-type: none;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     z-index: 1;
     text-shadow: 1px 1px 12px var(--textShadow);
 }
@@ -195,19 +196,43 @@ button:hover {
 
 
 /*footer*/
-.contactInfo {
-    /* background-color: var(--mainRed); */
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    color: var(--textFooter);
-    background-image: linear-gradient(to top right, #D90000 60%, rgb(191, 220, 228));
-    text-shadow:  4px 4px 2px black;
-}
+
+    .contactInfo {
+        /* background-color: var(--mainRed); */
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        color: var(--textFooter);
+        background-image: linear-gradient(to top right, #D90000 60%, rgb(191, 220, 228));
+        text-shadow:  4px 4px 2px black;
+    }
+
 
 .space {
    padding-bottom: 10px;
+}
+
+/* Media queries til footer*/
+@media (max-width: 426px) {
+
+    .adress {
+    padding-left: 50px;
+    }
+
+    .contactInfo {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .email {
+        padding-right: 30px;
+    }
 }

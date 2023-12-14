@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'Idretsskole',
       'Orientering',
       'Ski',
-      'apen Hall',
+      'Åpen Hall',
     ];
   
     for (let i = 0; i < 8; i++) {

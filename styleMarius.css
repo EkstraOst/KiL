@@ -8,6 +8,18 @@
     font-family: 'Roboto Slab', serif;
 }
 
+.borderBackground {
+    border: solid 2px #c55353;
+    box-shadow: 0px 0px 30px #5f0505;
+}
+
+.lightToggle {
+    border: solid 2px #c55353;
+}
+.lightToggle:hover {
+    box-shadow: 0px 0px 30px #5f0505;
+}
+
 .moonIcon {
     display: none;
     cursor: pointer;
@@ -32,13 +44,8 @@ body {
 .darkMode {
     background: #414141;
     color: #fff;
-    /*Pardon me Marius, Polly justerer litt*/
-    .infoCard {
-        border: 1px solid #E5E5E4;
-    }
-    .imgBox {
-        border: 1px solid #E5E5E4;
-    }
+
+    
 }
 .logoSmall {
  display: none;   
@@ -48,7 +55,8 @@ header {
     position: absolute;
     width: 100%;
     min-height: 66px;
-    background: #D90000;
+    background-image: linear-gradient(to bottom right, #D90000 60%, rgb(191, 220, 228));
+    /* background: #D90000; */
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
@@ -73,6 +81,7 @@ header ul li {
 }
 
 header ul li a {
+    text-shadow:  4px 4px 2px black;
     color: #fff;
     font-size: 1.1em;
     padding: 20px 25px;
@@ -82,11 +91,13 @@ header ul li a {
   
 }
 
+
 header ul li a:hover {
     background: #fd0101;
 }
 
 header ul li ul {
+    z-index: 1;
     position: absolute;
     left: 0;
     width: 200px;
@@ -95,6 +106,7 @@ header ul li ul {
     -webkit-transition: height 0.3s ease;
     transition: height 0.3s ease;
 }
+
 
 @keyframes fadeInDown {
     from {
@@ -232,4 +244,83 @@ header ul li ul li ul {
     header.active .menuToggle::after {
         transform: rotate(315deg);
     }
+    .side-icons {
+        display: none;
+    }
 }
+
+#side-icons {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px; /* Adjust this if you want the icons on the right side */
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    opacity: 0;
+  transition: opacity 0.5s ease;
+  }
+  
+  .side-icon {
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .side-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20%;
+  }
+  
+  
+  .side-icon:hover {
+    scale: 2;
+    
+
+  }
+  
+.id-name-display {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: none;
+  }
+  
+  .side-icon .icon-text {
+    position: absolute;
+    bottom: 20%;
+    left: -140%;
+    transform: translateX(-30%);
+    background-color: #333;
+    color: #fff;
+    padding: 0px;
+    border-radius: 1px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .side-icon:hover .icon-text {
+    opacity: 1;
+  }
+  
+  .colorChange {
+    color: white;
+    text-decoration: underline;
+    
+  }
+  .colorChange:hover {
+    cursor: pointer;
+  }

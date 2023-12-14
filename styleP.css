@@ -126,6 +126,7 @@
         max-width: 300epx;
         min-width:20em;
         max-height: 500px;
+
     }
     .imgBox {
         max-width: 300px;
@@ -149,6 +150,8 @@
     .mobileDisplay {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 2em;
     }
     .mobileDivCard {
@@ -162,13 +165,13 @@
         border: 1px solid var(--dark-grey);
         border-radius: 10px;
         margin:10px;
+        box-shadow: 5px 5px 5px #404040ac;
     }
     .mobileImg {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%; 
-        object-fit: contain;
+        max-width: 18em; 
         overflow: hidden;
     }
 }

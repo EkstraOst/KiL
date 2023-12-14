@@ -326,3 +326,7 @@ header ul li ul li ul {
   .colorChange:hover {
     cursor: pointer;
   }
+
+  .boxBorder {
+    border: none;
+  }

@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'assets/icons/idretsskole.png',
       'assets/icons/orientering.png',
       'assets/icons/ski.png',
-      'assets/icons/åpen hall.png',
+      'assets/icons/apen_hall.png',
     ];
   
     const iconHrefLinks = [
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
       '#idretsskole',
       '#orientering',
       '#ski',
-      '#åpenHall',
+      '#apenHall',
     ];
   
     const iconTitles = [
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'Idretsskole',
       'Orientering',
       'Ski',
-      'Åpen Hall',
+      'apen Hall',
     ];
   
     for (let i = 0; i < 8; i++) {

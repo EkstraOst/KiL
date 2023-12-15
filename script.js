@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
       '#handball',
       '#karate',
       '#turOgKano',
-      '#idrettsskule',
+      '#idrettsskole',
       '#orientering',
       '#ski',
       '#apenHall',

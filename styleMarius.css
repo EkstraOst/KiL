@@ -1,3 +1,13 @@
+:root {
+    --main-red:#D90000; 
+    --hover-red: #fd0101;
+    --grey: #E5E5E4;
+    --drop-grey: #445964;
+    /*dark mode*/
+    --dark-grey: #414141;
+    --white: #fff;
+}
+
 /*Styling kode til navbar og light/dark mode, kodet av Marius Moldeklev*/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap');
@@ -44,8 +54,15 @@ body {
 .darkMode {
     background: #414141;
     color: #fff;
-
-    
+    /*Polly makes minor adjustment*/
+    .infoCard {
+        border: 1px solid var(--grey);
+        border-radius: 10px;
+    }
+    .imgBox {
+        border: 1px solid var(--grey);
+        border-radius: 10px;
+    } 
 }
 .logoSmall {
  display: none;   

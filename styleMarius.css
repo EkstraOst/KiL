@@ -39,6 +39,12 @@
     display: none;
     cursor: pointer;
 }
+
+.boxBorder {
+    border: none;
+    box-shadow: none;
+  }
+
 .divHeaderSpacing {
     width: 100%;
     display: flex;

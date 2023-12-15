@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     const iconTitles = [
       'Fotball',
-      'Handball',
+      'Håndball',
       'Karate',
       'Tur og Kano',
       'Idrettsskule',

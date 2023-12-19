@@ -71,11 +71,14 @@
 
 /*Egne klasser til bildene for å kunne justere dem riktig i henhold til imgBox*/
 .imgDisplay {
-    max-width: 62vw;
-    max-height: 62vh;
+    max-width: 70vw;
+    max-height: 70vh;
     border-radius: 10px;
     overflow: hidden;
     position: absolute;
+    /* display: block;
+    width: 100%;
+    height: auto; */
     left: -7em;
 }
 

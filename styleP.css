@@ -28,16 +28,19 @@
 }
 
 .divCard {
+    border: 1px solid var(--dark-grey);
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     gap: 2.5em;
+    box-shadow: 5px 5px 5px #404040ac;
 }
 
 .infoCard {
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--dark-grey);
-    border-radius: 10px;
+    /* border: 1px solid var(--dark-grey);
+    border-radius: 10px; */
     padding: 25px;
     gap: 2rem;
     /*adjust height and width to fit content*/
@@ -45,7 +48,7 @@
     /* min-width: 30em; */
     height: 31.5em;
     text-align: center;
-    box-shadow: 5px 5px 5px #404040ac;
+    /* box-shadow: 5px 5px 5px #404040ac; */
 }
 
 .location {
@@ -55,22 +58,28 @@
 }
 
 .imgBox {
-    border: 1px solid var(--dark-grey);
-    border-radius: 10px;
+    /* border: 1px solid var(--dark-grey);
+    border-radius: 10px; */
     max-width:31.5em;
     max-height: 31.5em;
     min-width:31.5em;
-    box-shadow: 5px 5px 5px #404040ac;
+    border-radius: 10px;
+    overflow:hidden; 
+    position: relative;
+    /* box-shadow: 5px 5px 5px #404040ac; */
 }
 
 /*Egne klasser til bildene for å kunne justere dem riktig i henhold til imgBox*/
 .imgDisplay {
-    max-width: 31.4em;
-    max-height: 31em;
+    max-width: 62vw;
+    max-height: 62vh;
     border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    left: -7em;
 }
 
-.imgFotball {
+/* .imgFotball {
     max-width: 31.4em;
     max-height: 31em;
     border-radius: 10px;
@@ -98,7 +107,7 @@
     max-width: 31.4em;
     max-height: 31em;
     border-radius: 10px;
-}
+} */
 
 
 
@@ -116,8 +125,6 @@
 .mobileDivCard {
     display: none;
 }
-
-
 
 
 /* Add media querys! */
@@ -176,4 +183,4 @@
     }
 }
 
-/*Fix the mess above*/
+/*Fix the mess above, in particular tablet*/

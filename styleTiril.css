@@ -174,7 +174,10 @@
 }
 
 /* Knapp for påmelding */
-
+.position {
+    display: flex;
+    justify-content: flex-end;
+}
 .buttonRegistration {
     background-color: var(--backgroundButton);
     border: 2px solid var(--borderButton);

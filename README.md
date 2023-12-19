@@ -10,7 +10,8 @@
     - note to self: se over skrivefeil!
 
     - Se over text-decoration-underline i colorChange class(Marius css), mulig vi burde endre noe der.
-    - Note to self: legg in mer padding/gap mellomg div kortene
+    
+    - Note to self: legg in mer padding/gap mellom div kortene
 
 
 

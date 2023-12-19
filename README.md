@@ -5,12 +5,12 @@
 - P:
     - Tiril: Er det mulig å legge inn en liten animasjon på wordsV? Slik at ordene fader inn ett og ett, med litt delay? Og kanskje det er lurt å legge inn en hvit skygge(text-shadow) slik at teksten er synlig selv om videoen blir mørk?
 
-    - Marius: Er det mulig å legge inn en delayed trasition på dropdown meny?
+    - Marius: Er det mulig å legge inn en delayed trasition på dropdown meny? -Yep, done
 
     - note to self: se over skrivefeil!
 
     - Se over text-decoration-underline i colorChange class(Marius css), mulig vi burde endre noe der.
-    
+
     - Note to self: legg in mer padding/gap mellom div kortene
 
 

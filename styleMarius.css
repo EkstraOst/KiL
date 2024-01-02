@@ -213,9 +213,9 @@ header ul li ul li ul {
         top: 0;
         left: 0;
     }
-    /*What? Why hover color in tablet size?*/
+
     header nav ul li:hover ul li {
-        background: #546e7b;
+        background: var(--drop-grey);
     }
     .menuToggle {
         position: relative;

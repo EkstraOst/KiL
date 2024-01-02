@@ -22,8 +22,8 @@
     border: solid 2px #c55353;
     box-shadow: 0px 0px 30px #5f0505;
 }
-
 */
+
 .lightToggle {
    border-radius: 10%;
 } 
@@ -37,18 +37,20 @@
     display: none;
     cursor: pointer;
 }
+
 .sunIcon {
     z-index: 10;
     display: none;
     cursor: pointer;
 }
+
 .divHeaderSpacing {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
+
 body {
     min-height: 100vh;
     background: #E5E5E4;
@@ -57,8 +59,8 @@ body {
 .darkMode {
     background: #414141;
     color: #fff;
-
-    
+    border: 1px solid var(--grey);
+    border-radius: 10px;
 }
 .logoSmall {
  display: none;   
@@ -101,9 +103,7 @@ header ul li a {
     text-decoration: none;
     display: flex;
     justify-content:  space-between;
-  
 }
-
 
 header ul li a:hover {
     background: #fd0101;
@@ -120,7 +120,6 @@ header ul li ul {
     transition: height 0.3s ease;
 }
 
-
 @keyframes fadeInDown {
     from {
       opacity: 0;
@@ -136,7 +135,6 @@ header ul li:hover ul {
     display: block;
     animation: fadeInDown 0.5s ease forwards;
 }
-
 
 header ul li ul {
     position: absolute;
@@ -162,8 +160,6 @@ header ul li ul {
 header ul li:hover ul {
     display: block;
     animation: fadeInDown 0.5s ease forwards;
-    
-
 }
 
 header ul li ul li {
@@ -175,7 +171,6 @@ header ul li ul li {
 header ul li ul li ul {
     top:  0;
     left: 200px;
-
 }
 
 @media (max-width: 900px) {
@@ -196,12 +191,9 @@ header ul li ul li ul {
         left: 0;
         background: #445964;
         display: none;
-    
     }
     header.active nav {
-        display: initial;
-        
-        
+        display: initial; 
     }
     header nav ul li {
         width: 100%;
@@ -214,7 +206,6 @@ header ul li ul li ul {
     header ul li ul li ul {
         top: 0;
         left: 0;
-
     }
     header nav ul li:hover ul li {
         background: #546e7b;
@@ -272,7 +263,7 @@ header ul li ul li ul {
     flex-direction: column;
     align-items: flex-end;
     opacity: 0;
-  transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
   }
   
   .side-icon {
@@ -293,11 +284,8 @@ header ul li ul li ul {
     border-radius: 20%;
   }
   
-  
   .side-icon:hover {
     scale: 2;
-    
-
   }
   
 .id-name-display {
@@ -332,9 +320,7 @@ header ul li ul li ul {
   .colorChange {
     color: white;
     font-size: 20px;
-    background-color: black;
-  
-    
+    /* background-color: black; */
   }
   .colorChange:hover {
     cursor: pointer;

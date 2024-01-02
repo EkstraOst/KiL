@@ -137,6 +137,19 @@
     padding-top: 2em;
 }
 
+.apenHall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--dark-grey);
+    border-radius: 10px;
+    padding: 3em;
+    width: 70%;
+    gap: 1em;
+    margin-top: 2em;
+}
+
 .mobileDivCard {
     display: none;
 }

@@ -17,6 +17,7 @@
     gap: 2em;
 }
 
+/*STYLING SPOSRT DIV*/
 .sportsContainer {
     display: flex;
     justify-content: space-around;

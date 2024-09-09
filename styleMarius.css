@@ -242,7 +242,7 @@ header ul li ul li ul {
         height: 3px;
         background: var(--col_fg);
         transform: translateY(-12px);
-        box-shadow: 0 12px var(--col_fg);
+        /* box-shadow: 0 12px var(--col_fg); */
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .menuToggle::after {
@@ -257,7 +257,7 @@ header ul li ul li ul {
 
     header.active .menuToggle::before {
         transform: rotate(45deg);
-        box-shadow: 0 0 var(--col_fg);
+        /* box-shadow: 0 0 var(--col_fg); */
     }
 
     header.active .menuToggle::after {

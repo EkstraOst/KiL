@@ -20,12 +20,12 @@
 }
 
 .divCard {
-    border: 1px solid var(--col_alt);
+    border: 1px solid var(--col_alt_bak);
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     gap: 2.5em;
-    box-shadow: 5px 5px 5px var(--col_alt);
+    box-shadow: 1px 1px 1px var(--col_alt_bak);
 }
 
 .infoCard {
@@ -142,10 +142,10 @@
         padding: 25px;
         width: 85%;
         gap: 1em;
-        border: 1px solid var(--col_alt);
+        border: 1px solid var(--col_alt_bak);
         border-radius: 10px;
         margin: 10px;
-        box-shadow: 5px 5px 5px var(--col_alt);
+        box-shadow: 1px 1px 1px var(--col_alt_bak);
     }
     .mobileImg {
         display: flex;

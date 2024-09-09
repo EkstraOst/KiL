@@ -1,169 +1,67 @@
 // onclick hamburgermeny dropdown
 
-let menuToggle = document.querySelector('.menuToggle');
-let header = document.querySelector('header');
+//HAMBURGER MENU TOGGLER
+document.querySelector(".menuToggle").onclick = function () {
+    document.querySelector("header").classList.toggle("active");
+};
 
+//LIGHT/DARK TOGGLER
+const scheme_selector = document.querySelector("#scheme");
 
-menuToggle.onclick = function(){
-    header.classList.toggle('active');
-}
-
-//toggle light dark
-
-    let lightToggle = document.querySelector('.lightToggle');
-    let body = document.querySelector('body');
-    let sunIcon = document.querySelector('.sunIcon');
-    let moonToggle = document.querySelector('.moonImg')
-   
-    
-    lightToggle.onclick = function() {
-        body.classList.toggle('darkMode');
-        sunIcon.classList.toggle('sunIcon');
-        moonToggle.classList.toggle('moonIcon');
-
-    };
-        
- ///////////////////////////////////////////////////////////////////////////////////////////
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     const sideIconsContainer = document.getElementById('side-icons');
-  
-//     const iconPaths = [
-//       'assets/icons/fotball.png',
-//       'assets/icons/handball.png',
-//       'assets/icons/karate.png',
-//       'assets/icons/turOGkano.png',
-//       'assets/icons/idrettsskule.png',
-//       'assets/icons/orientering.png',
-//       'assets/icons/ski.png',
-//       'assets/icons/åpen hall.png',
-//     ];
-  
-//     const iconHrefLinks = [
-//       '#fotball',
-//       '#handball',
-//       '#karate',
-//       '#turOgKano',
-//       '#idrettsskule',
-//       '#orientering',
-//       '#ski',
-//       '#åpenHall',
-//     ];
-  
-//     const iconTitles = [
-//       'Fotball',
-//       'Handball',
-//       'Karate',
-//       'Tur og Kano',
-//       'Idrettsskule',
-//       'Orientering',
-//       'Ski',
-//       'Åpen Hall',
-//     ];
-  
-//     for (let i = 0; i < 8; i++) {
-//       const sideIcon = document.createElement('div');
-//       sideIcon.className = 'side-icon';
-  
-//       const imgElement = document.createElement('img');
-//       imgElement.src = iconPaths[i];
-//       imgElement.alt = `Icon ${i + 1}`;
-  
-//       // Set the title attribute for hover text
-//       imgElement.title = iconTitles[i];
-  
-//       (function (index) {
-//         sideIcon.addEventListener('click', function () {
-//           window.location.href = iconHrefLinks[index];
-//         });
-//       })(i);
-  
-//       sideIcon.appendChild(imgElement);
-//       sideIconsContainer.appendChild(sideIcon);
-//     }
-  
-//     window.addEventListener('scroll', function () {
-//       const scrollPosition = window.scrollY;
-  
-//       if (scrollPosition > 100) {
-//         sideIconsContainer.style.opacity = 1;
-//       } else {
-//         sideIconsContainer.style.opacity = 0;
-//       }
-//     });
-//   });
-  
-document.addEventListener('DOMContentLoaded', function () {
-    const sideIconsContainer = document.getElementById('side-icons');
-  
-    const iconPaths = [
-      'assets/icons/fotball.png',
-      'assets/icons/handball.png',
-      'assets/icons/karate.png',
-      'assets/icons/turOGkano.png',
-      'assets/icons/idrettsskule.png',
-      'assets/icons/orientering.png',
-      'assets/icons/ski.png',
-      'assets/icons/apen_hall.png',
-    ];
-  
-    const iconHrefLinks = [
-      '#fotball',
-      '#handball',
-      '#karate',
-      '#turOgKano',
-      '#idretsskole',
-      '#orientering',
-      '#ski',
-      '#apenHall',
-    ];
-  
-    const iconTitles = [
-      'Fotball',
-      'Håndball',
-      'Karate',
-      'Tur og Kano',
-      'Idrettsskule',
-      'Orientering',
-      'Ski',
-      'Åpen Hall',
-    ];
-  
-    for (let i = 0; i < 8; i++) {
-      const sideIcon = document.createElement('div');
-      sideIcon.className = 'side-icon';
-  
-      const imgElement = document.createElement('img');
-      imgElement.src = iconPaths[i];
-      imgElement.alt = `Icon ${i + 1}`;
-  
-      // Set the title attribute for hover text
-      imgElement.title = iconTitles[i];
-  
-      // Create a span element for the text
-      const textElement = document.createElement('span');
-      textElement.className = 'icon-text'; // Add a class to style in CSS
-      textElement.textContent = iconTitles[i];
-  
-      (function (index) {
-        sideIcon.addEventListener('click', function () {
-          window.location.href = iconHrefLinks[index];
-        });
-      })(i);
-  
-      sideIcon.appendChild(imgElement);
-      sideIcon.appendChild(textElement); // Append the text element
-      sideIconsContainer.appendChild(sideIcon);
+scheme_selector.onclick = function () {
+    let colors = ["--col_fg", "--col_bg", "--col_tonic", "--col_alt"];
+    const r = document.querySelector(":root");
+    for (let i = 0; i < colors.length; i++) {
+        let temp = getComputedStyle(r).getPropertyValue(colors[i]);
+        r.style.setProperty(colors[i], getComputedStyle(r).getPropertyValue(colors[i] + "_bak"));
+        r.style.setProperty(colors[i] + "_bak", temp);
     }
-  
-    window.addEventListener('scroll', function () {
-      const scrollPosition = window.scrollY;
-  
-      if (scrollPosition > 100) {
-        sideIconsContainer.style.opacity = 1;
-      } else {
-        sideIconsContainer.style.opacity = 0;
-      }
+    let val = !scheme_selector.classList.contains("dark");
+    scheme_selector.classList.add(val ? "dark" : "light");
+    scheme_selector.classList.remove(val ? "light" : "dark");
+};
+
+//MENU SETUP
+const menu = document.getElementById("side-icons");
+window.addEventListener("scroll", () => {
+    menu.style.opacity = window.scrollY > 100 ? 1 : (window.scrollY / 100.0) * (window.scrollY / 100.0);
+});
+
+const menuitems = [
+    { id: "0", icon: "fotball.png", href: "#fotball", title: "Fotball" },
+    { id: "1", icon: "handball.png", href: "#handball", title: "Håndball" },
+    { id: "2", icon: "karate.png", href: "#karate", title: "Karate" },
+    { id: "3", icon: "turOgKano.png", href: "#turOgKano", title: "Tur og Kano" },
+    { id: "4", icon: "idrettsskule.png", href: "#idrettsskule", title: "Idrettskulen" },
+    { id: "5", icon: "orientering.png", href: "#turOgKano", title: "Orientering" },
+    { id: "6", icon: "ski.png", href: "#ski", title: "Ski" },
+    { id: "7", icon: "apen_hall.png", href: "#aapenHall", title: "Åpen Hall" },
+];
+
+for (const menuitem of menuitems) {
+    //generate new menuitem-element
+    const nuIcon = document.createElement("div");
+    nuIcon.className = "side-icon";
+    nuIcon.classList.add("menuitem" + menuitem.id);
+
+    //The image inside the menuitem
+    const imgElement = document.createElement("img");
+    imgElement.src = "./Assets/Icons/" + menuitem.icon;
+    imgElement.alt = menuitem.title;
+    imgElement.title = "Menyvalg " + menuitem.title;
+
+    //The text-span inside the menuitem
+    const textElement = document.createElement("span");
+    textElement.className = "icon-text"; // Add a class to style in CSS
+    textElement.textContent = menuitem.title;
+
+    //Make clickable
+    nuIcon.addEventListener("click", function () {
+        window.location.href = menuitem.href;
     });
-  });
-  
+
+    //Put together and add to page
+    nuIcon.appendChild(imgElement);
+    nuIcon.appendChild(textElement); // Append the text element
+    menu.appendChild(nuIcon);
+}

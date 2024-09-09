@@ -1,16 +1,3 @@
-/* Laga av Tiril */
-
-:root {
-    --text: #0f0f0f;
-    --mainRed:#D90000;
-    --textShadow: #ffffff;
-    --backgroundButton:#D90000;
-    --borderButton: #414141;
-    --textButton: #ffffff;
-    --hoverButton: #c70000;
-    --textFooter: #ffffff ;
-}
-
 /* Splash video */
 
 .flexContainer {
@@ -33,7 +20,10 @@
     font-weight: bold;
     font-size: 40px;
     z-index: 1;
-    text-shadow: 1px 1px 12px var(--textShadow);
+    text-shadow: 1px 1px 12px var(--col_fg);
+}
+.wordsV li {
+    color: var(--col_bg);
 }
 
 .videoContainer {
@@ -43,10 +33,10 @@
 }
 
 .videoContainer video {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
 }
 
 .videoContainer .caption {
@@ -56,7 +46,7 @@
     color: var(--text);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
 }
 
 /* Animasjon på tekst over splash */
@@ -64,113 +54,113 @@
 .caption .liI {
     animation: text1 1.5s linear forwards;
 }
-   
+
 @keyframes text1 {
-       0% {
-           transform: translateY(-200px) scaleY(0.9);
-           opacity: 0;
-       }
-       5% {
-           opacity: 0;
-       }
-       50% {
-           transform: translateY(0px) scaleY(1);
-           opacity: 0;
-       }
-       
-       100% {
-           transform: translateY(0px) scaleY(1);
-           opacity: 1;
-       }
+    0% {
+        transform: translateY(-200px) scaleY(0.9);
+        opacity: 0;
+    }
+    5% {
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0px) scaleY(1);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px) scaleY(1);
+        opacity: 1;
+    }
 }
-   
+
 .caption .liI {
-       animation-delay: 0.2s;
-       opacity: 0;
+    animation-delay: 0.2s;
+    opacity: 0;
 }
 
 .caption .liT {
     animation: text2 2.5s linear forwards;
 }
-   
+
 @keyframes text2 {
-       0% {
-           transform: translateY(-200px) scaleY(0.9);
-           opacity: 0;
-       }
-       5% {
-           opacity: 0;
-       }
-       50% {
-           transform: translateY(0px) scaleY(1);
-           opacity: 0;
-       }
-       
-       100% {
-           transform: translateY(0px) scaleY(1);
-           opacity: 1;
-       }
+    0% {
+        transform: translateY(-200px) scaleY(0.9);
+        opacity: 0;
+    }
+    5% {
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0px) scaleY(1);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px) scaleY(1);
+        opacity: 1;
+    }
 }
-   
+
 .caption .liT {
-       animation-delay: 0.4s;
-       opacity: 0;
+    animation-delay: 0.4s;
+    opacity: 0;
 }
 
 .caption .liM {
     animation: text3 3.5s linear forwards;
 }
-   
+
 @keyframes text3 {
-       0% {
-           transform: translateY(-200px) scaleY(0.9);
-           opacity: 0;
-       }
-       5% {
-           opacity: 0;
-       }
-       50% {
-           transform: translateY(0px) scaleY(1);
-           opacity: 0;
-       }
-       
-       100% {
-           transform: translateY(0px) scaleY(1);
-           opacity: 1;
-       }
+    0% {
+        transform: translateY(-200px) scaleY(0.9);
+        opacity: 0;
+    }
+    5% {
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0px) scaleY(1);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px) scaleY(1);
+        opacity: 1;
+    }
 }
-   
+
 .caption .liM {
-       animation-delay: 0.5s;
-       opacity: 0;
+    animation-delay: 0.5s;
+    opacity: 0;
 }
 
 .caption .liU {
     animation: text4 4.5s linear forwards;
 }
-   
+
 @keyframes text4 {
-       0% {
-           transform: translateY(-200px) scaleY(0.9);
-           opacity: 0;
-       }
-       5% {
-           opacity: 0;
-       }
-       50% {
-           transform: translateY(0px) scaleY(1);
-           opacity: 0;
-        }
-       
-       100% {
-           transform: translateY(0px) scaleY(1);
-           opacity: 1;
-       }
+    0% {
+        transform: translateY(-200px) scaleY(0.9);
+        opacity: 0;
+    }
+    5% {
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0px) scaleY(1);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px) scaleY(1);
+        opacity: 1;
+    }
 }
-   
+
 .caption .liU {
-       animation-delay: 0.6s;
-       opacity: 0;
+    animation-delay: 0.6s;
+    opacity: 0;
 }
 
 /* Knapp for påmelding */
@@ -179,9 +169,9 @@
     justify-content: flex-end;
 }
 .buttonRegistration {
-    background-color: var(--backgroundButton);
-    border: 2px solid var(--borderButton);
-    color: var(--textButton);
+    background-color: var(--col_tonic);
+    border: 2px solid var(--col_alt);
+    color: var(--col_fg);
     width: 100px;
     cursor: pointer;
     padding: 5px;
@@ -189,39 +179,38 @@
 }
 
 button:hover {
-    background-color: var(--hoverButton);
+    background-color: var(--col_tonic);
 }
 
 .buttonRegistrationLink {
     text-decoration: none;
-    color: var(--textButton);
+    color: var(--col_fg);
 }
-
 
 /*footer*/
 .contactInfo {
-    /* background-color: var(--mainRed); */
     width: 100%;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
-    color: var(--textFooter);
-    /*Marius made adjustment*/
-    background-image: linear-gradient(to top right, #D90000 60%, rgb(191, 220, 228));
-    text-shadow:  4px 4px 2px black;
+    background: var(--col_tonic);
+}
+
+.contactInfo * {
+    text-shadow: 1px 1px 1px var(--col_fg);
+    color: var(--col_bg);
 }
 
 .space {
-   padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 /* Media queries til footer*/
 @media (max-width: 426px) {
-
     .adress {
-    padding-left: 50px;
+        padding-left: 50px;
     }
 
     .contactInfo {

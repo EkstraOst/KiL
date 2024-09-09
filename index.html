@@ -10,450 +10,477 @@
     <link rel="stylesheet" href="styleTiril.css"/>
     <link rel="stylesheet" href="styleP.css"/>
     <script src="script.js" defer></script>
-
+    
 </head>
 <body>
     <header>
         <!-- All kode i header er laget av Marius Moldeklev -->
         <div class="divHeaderSpacing">
-
+            
             <div class="divHeaderSpacing1">
-                <img class="logo borderBackground" src="Assets/Logo/hvit_logo_ingen_bakgrunn.png" height="100px" alt="">
-                <img class="logoSmall borderBackground" src="Assets/Logo/hvit_logo_ingen_bakgrunn.png" alt="">
+                <img class="logo" src="Assets/Logo/hvit_logo_ingen_bakgrunn.png" height="100px" alt="">
+                <!-- <img class="logoSmall " src="Assets/Logo/hvit_logo_ingen_bakgrunn.png" alt=""> -->
             </div>
             <div class="divHeaderSpacing1">
                 <div class="menuToggle divHeaderSpacing1"></div>
             </div>
-
+            
             <nav>
                 <ul>
                     <li><a href="#">Heim</a></li>
                     <li><a href="pages/news_page/news_page.html">Nyheiter</a></li>
                     <li><a href="pages/Calendar_page/calendar_page.html">Kalender</a></li>
                     <li><a href="#">Bli Medlem<b>▼</b></a>
-                   <ul>
-                        <li><a href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Søknadsskjema</a></li>
-                        <li><a href="">Politiattest-skjema</a></li>
-                    </ul></li>
-                    <li><a href="#">Sport<b>▼</b></a>
                         <ul>
-                            <li><a href="#fotball">Fotball</a></li>
-                            <li><a href="#handball">Håndball</a></li>
-                            <li><a href="#karate">Karate</a></li>
-                            <li><a href="#turOgKano">Tur/Kano</a></li>
-                            <li><a href="#idretsskole">Idrettsskule</a></li>
-                            <li><a href="#orientering">Orientering</a></li>
-                            <li><a href="#ski">Ski</a></li>
+                            <li><a href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Søknadsskjema</a></li>
+                            <li><a href="">Politiattest-skjema</a></li>
                         </ul></li>
-                    <li><a href="pages/about_page/about_page.html">Om oss</a></li>
-                </ul>
-            </nav>
-            <div class="lightToggle boxBorder"><img class="lightToggle imgToggle moonImg " src="Assets/Icons/darkModeToggleButton2Trans.png" height="40px" alt="">
-                <img class="lightToggle sunIcon" src="Assets/Icons/lightModeToggleButtonTrans.png" height="40px" alt="">      
-            </div>
-        </div>
-    </header>
-    <main>
-        <!-- Kode fra Marius-->
-        <div id="side-icons"></div>
-        <div id="id-name-display" class="id-name-display"></div>
-
-        <!-- Laga av Tiril -->
-        <!-- Splash video -->
-        <section class="splashContainer">
-            <div class="videoContainer">
-                <video autoplay muted loop>
-                    <!-- Her er ein eksempel video-->
-                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+                        <li><a href="#">Sport<b>▼</b></a>
+                            <ul>
+                                <li><a href="#fotball">Fotball</a></li>
+                                <li><a href="#handball">Håndball</a></li>
+                                <li><a href="#karate">Karate</a></li>
+                                <li><a href="#turOgKano">Tur/Kano</a></li>
+                                <li><a href="#idretsskole">Idrettsskule</a></li>
+                                <li><a href="#orientering">Orientering</a></li>
+                                <li><a href="#ski">Ski</a></li>
+                            </ul></li>
+                            <li><a href="pages/about_page/about_page.html">Om oss</a></li>
+                        </ul>
+                    </nav>
+                    <div id="scheme">
+                        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        width="32px" height="32px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                   <g>
+                       <circle fill-rule="evenodd" clip-rule="evenodd" fill="var(--col_bg)" cx="32.003" cy="32.005" r="16.001"/>
+                       <path fill-rule="evenodd" clip-rule="evenodd" fill="var(--col_bg)" d="M12.001,31.997c0-2.211-1.789-4-4-4H4c-2.211,0-4,1.789-4,4
+                           s1.789,4,4,4h4C10.212,35.997,12.001,34.208,12.001,31.997z"/>
+                       <path fill-rule="evenodd" clip-rule="evenodd" fill="var(--col_bg)" d="M12.204,46.139l-2.832,2.833c-1.563,1.562-1.563,4.094,0,5.656
+                           c1.562,1.562,4.094,1.562,5.657,0l2.833-2.832c1.562-1.562,1.562-4.095,0-5.657C16.298,44.576,13.767,44.576,12.204,46.139z"/>
+                       <path fill-rule="evenodd" clip-rule="evenodd" fill="var(--col_bg)" d="M32.003,51.999c-2.211,0-4,1.789-4,4V60c0,2.211,1.789,4,4,4
+                           s4-1.789,4-4l-0.004-4.001C36.003,53.788,34.21,51.999,32.003,51.999z"/>
+                       <path fill-rule="evenodd" clip-rule="evenodd" fill="var(--col_bg)" d="M51.798,46.143c-1.559-1.566-4.091-1.566-5.653-0.004
+                           s-1.562,4.095,0,5.657l2.829,2.828c1.562,1.57,4.094,1.562,5.656,0s1.566-4.09,0-5.656L51.798,46.143z"/>
+                       <path fill-rule="evenodd" clip-rule="evenodd" fill="var(--col_bg)" d="M60.006,27.997l-4.009,0.008
+                           c-2.203-0.008-3.992,1.781-3.992,3.992c-0.008,2.211,1.789,4,3.992,4h4.001c2.219,0.008,4-1.789,4-4
+                           C64.002,29.79,62.217,27.997,60.006,27.997z"/>
+                       <path fill-rule="evenodd" clip-rule="evenodd" fill="var(--col_bg)" d="M51.798,17.859l2.828-2.829c1.574-1.566,1.562-4.094,0-5.657
+                           c-1.559-1.567-4.09-1.567-5.652-0.004l-2.829,2.836c-1.562,1.555-1.562,4.086,0,5.649C47.699,19.426,50.239,19.418,51.798,17.859z"
+                           />
+                       <path fill-rule="evenodd" clip-rule="evenodd" fill="var(--col_bg)" d="M32.003,11.995c2.207,0.016,4-1.789,4-3.992v-4
+                           c0-2.219-1.789-4-4-4c-2.211-0.008-4,1.781-4,3.993l0.008,4.008C28.003,10.206,29.792,11.995,32.003,11.995z"/>
+                       <path fill-rule="evenodd" clip-rule="evenodd" fill="var(--col_bg)" d="M12.212,17.855c1.555,1.562,4.079,1.562,5.646-0.004
+                           c1.574-1.551,1.566-4.09,0.008-5.649l-2.829-2.828c-1.57-1.571-4.094-1.559-5.657,0c-1.575,1.559-1.575,4.09-0.012,5.653
+                           L12.212,17.855z"/>
+                   </g>
+                   </svg>
+                   <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="var(--col_bg)"/>
+                    </svg>
+                   </div>
+                </div>
+            </header>
+            <main>
+                <!-- Kode fra Marius-->
+                <div id="side-icons"></div>
+                <div id="id-name-display" class="id-name-display"></div>
+                
+                <!-- Laga av Tiril -->
+                <!-- Splash video -->
+                <section class="splashContainer">
+                    <div class="videoContainer">
+                        <video style="filter: blur(6px)" autoplay muted>
+                            <!-- Her er ein eksempel video-->
+                            <source src="./Assets/Annet/foot1.mp4" type="video/mp4" />
+                        </video>
+                        <!-- Liste over splash -->
+                        <div class="caption">
+                            <ul class="wordsV">
+                                <li class="liI">Inkludering</li>
+                                <li class="liT">Tryggheit</li>
+                                <li class="liM">Meistring</li>
+                                <li class="liU">Utvikling</li>
+                            </ul>
+                        </div>
+                    </div>
                 </video>
-                <!-- Liste over splash -->
-                <div class="caption">
-                <ul class="wordsV">
-                    <li class="liI">Inkludering</li>
-                    <li class="liT">Tryggheit</li>
-                    <li class="liM">Meistring</li>
-                    <li class="liU">Utvikling</li>
-                </ul>
-                </div>
-            </div>
-            </video>
-        </section>
- 
-        <section class="flexContainer">
-            <h1>Knarvik Idrettslag</h1>
-            <h4>Aktivitet for alle</h4>
-            <p>
-                Knarvik IL er et fleridrettslag som vil skape idrettsglede, tilhørighet og mestring 
-                ved å aktivisere barn, unge og voksne i et trygt og inkluderende miljø
-            </p>
-        </section>
-        <!--imgSplash or lineBreak -->
-        
-        <!-- kodet av Polly -->
-        <section class="sportsContainer">
-            <!--Fotball-->
-            <div id="fotball" class="fotball divCard">
-                <div class="infoCard">
-                    <h3>Fotball</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis 
-                        molestias nesciunt rerum expedita optio quia, a qui voluptates 
-                        atque voluptatem. Lorem ipsum dolor sit amet.</p>
-                             <!-- Knapp til påmelding, kodet av Tiril -->
-                    <button class="buttonRegistration"> 
-                        <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
-                    </button>
-                </div>
-                <div class="imgBox">
-                    <img class="imgFotball imgDisplay" src="Assets/Fotball/fakeFotball.jpg"/>
-                    <!-- img(/s) and calendar --></div>
-            </div>
-            <!--Håndball-->
-            <div id="handball" class="handball divCard">
-                <div class="imgBox">
-                    <img class="imgHandball imgDisplay" src="Assets/Håndball/fakeHåndball (2).jpg"/>
-                    <!-- img(/s) and calendar --></div>
-                <div class="infoCard">
-                    <h3>Håndball</h3>
-                    <p>Knarvik idrettslag har tilbod om handball til barn og ungdom, i barne- og 
-                        ungdomsskulealder.  
-
-                        Det er god hallkapasitet i Knarvik, og laga trenar i Knarvik Arena 
-                        (idrettsanlegget ved Knarvik barneskule) og i Nordhordlandshallen. 
-                        Handballgruppa er foreldredriven, og tilbodet er heilt avhengig av at 
-                        foreldre og føresette stiller opp og sikrar eit tilbod til eigne og andre 
-                        sine barn og unge, og på den måten bidrar til eit godt oppvekstmiljø.   
-                        
-                        Handball er ein actionfylt lagidrett som gir mykje speleglede, samhald 
-                        og meistring.  
-                        
-                        Kjenner du nokon som har lyst til å spela handball, ta kontakt med leiar 
-                        i Knarvik IL si handballgruppe, Arne Ramslien. </p>
-                             <!-- Knapp til påmelding, kodet av Tiril -->
-                    <div class="position">
-                        <button class="buttonRegistration"> 
-                            <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!--Karate-->
-            <div id="karate" class="karate divCard">
-                <div class="infoCard">
-                    <!-- tekst fra Gro Helen, fra KiL-->
-                    <h3>Shorin-Ryu Karate</h3>
-                    <p> Knarvik Shorin-Ryu Karate er en liten gruppe som trener tradisjonell 
-                        karate og kobudo (våpen) fra Okinawa. Vi møtes to ganger i uken, i 
-                        Knarvik Arena. Nye medlemmer fra 12 år og oppover er hjertelig velkommen. 
-                        Vi har fortløpende opptak.
-
-                        Kom gjerne og se på, eller tren med fra start. Du trenger ikke kunne noe 
-                        om kampsport eller kampkunst fra før av, eller å være sterk og i god form! 
-                        
-                        For mer informasjon, inkl. treningssted og -tider se <a href="https://www.knarvikkarate.no/" target="_blank">knarvikkarate.no </a></p>
-                        <p class="location">Lokale: Knarvik Arena</p>
-                        <p>Lonsvegen 80, 5914 Knarvik</p>
-                             <!-- Knapp til påmelding, kodet av Tiril -->
-                    <button class="buttonRegistration"> 
-                        <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
-                    </button>
-                        <!-- Legg in aktiv link til knarvikkarate.no -->
-                </div>
-                <div class="imgBox"> 
-                    <img class="imgKarate imgDisplay" src="Assets/Karate/karate_5.jpg" alt=""/><!-- img(/s) and calendar --></div>
-            </div>
-            <!--Tur-Kano-->
-            <div id="turOgKano" class="turKano divCard">
-                <div class="imgBox">
-                    <img class="imgTurKano imgDisplay" src="Assets/TurKano/fakeKano.jpg"/>
-                    <!-- img(/s) and calendar --></div>
-                <div class="infoCard">
-                    <h3>Tur-Kano</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Maxime aut eius optio dolorem dignissimos. Tenetur, inventore! 
-                        Error ullam autem sit voluptatibus praesentium in laudantium tempora.</p>
-                             <!-- Knapp til påmelding, kodet av Tiril -->
-                    <div class="position">
-                        <button class="buttonRegistration"> 
-                            <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!--Idrettsskole-->
-            <div id="idretsskole" class="idrettsskole divCard">
-                <div class="infoCard">
-                    <h3>Idrettsskule</h3>
-                    <p>Idrettsskulen er eit tilbod til born i alderen 4-12 år. Målet er 
-                        å tilby allsidig aktivitet som vil skape idrettsglede, tilhørighet og mestring.
-
-                        Idrettsskulen tilbyr bading i Alversund symjehall annakvar fredag. 
-                        Borna i barnehagealder har og tilbod om trening og leik i Knarvik Arena annakvar 
-                        mandag.</p>
-                        <p class="location">Lokale: Knarvik Arena</p>
-                        <p>Lonsvegen 80, 5914 Knarvik</p>
-                             <!-- Knapp til påmelding, kodet av Tiril -->
-                    <button class="buttonRegistration"> 
-                        <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
-                    </button>
-                </div>
-                <div class="imgBox">
-                    <img class="imgIdrett imgDisplay" src="Assets/IdrettsSkole/fakeIdrett.jpg">
-                    <!-- img(/s) and calendar --></div>
-            </div>
-            <!--Orientering-->
-            <div id="orientering" class="orientering divCard">
-                <div class="imgBox">
-                    <img class="imgDisplay" src="Assets/Orientering/fakeOrient.jpg"/>
-                    <!-- img(/s) and calendar --></div>
-                <div class="infoCard">
-                    <h3>Orientering</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Ipsa eveniet deleniti non quibusdam unde quaerat aliquam accusantium 
-                        dolores beatae omnis temporibus, voluptatem molestiae!
-                    </p>
-                         <!-- Knapp til påmelding, kodet av Tiril -->
-                         <div class="position">
+            </section>
+            
+            <section class="flexContainer">
+                <h1>Knarvik Idrettslag</h1>
+                <h4>Aktivitet for alle</h4>
+                <p>
+                    Knarvik IL er et fleridrettslag som vil skape idrettsglede, tilhørighet og mestring 
+                    ved å aktivisere barn, unge og voksne i et trygt og inkluderende miljø
+                </p>
+            </section>
+            <!--imgSplash or lineBreak -->
+            
+            <!-- kodet av Polly -->
+            <section class="sportsContainer">
+                <!--Fotball-->
+                <div id="fotball" class="fotball divCard">
+                    <div class="infoCard">
+                        <h3>Fotball</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis 
+                            molestias nesciunt rerum expedita optio quia, a qui voluptates 
+                            atque voluptatem. Lorem ipsum dolor sit amet.</p>
+                            <!-- Knapp til påmelding, kodet av Tiril -->
                             <button class="buttonRegistration"> 
                                 <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
                             </button>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!--Ski-->
-            <div id="ski" class="ski divCard"> 
-                <div class="infoCard">
-                    <h3>Ski</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Omnis harum assumenda eos tempora accusamus perferendis adipisci 
-                        rem fugit quo repudiandae hic odio natus, veniam eaque.</p>
-                             <!-- Knapp til påmelding, kodet av Tiril -->
-                    <button class="buttonRegistration"> 
-                        <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
-                    </button>
-                </div>
-                <div class="imgBox"> 
-                    <img class="imgDisplay" src="Assets/Ski/fakeSki.jpg"/> 
-                    <!-- img(/s) and calendar -->  </div>
-            </div>
-            <!-- Frisbeegolf
-                <div class="sport7 divCard">  
-                    <div class="imgBox">  <- img(/s) and calendar ->  </div>
-                    <div class="infoCard">
-                        <h3></h3>
-                        <p></p>
-                             <!- Knapp til påmelding, kodet av Tiril ->
-                    <button class="buttonRegistration"> 
-                        <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
-                    </button>
-                    </div>
-            </div> -->
-
-        </section>
-        <section class="mobileDisplay">
-              <!-- Mobile display divCards-->
-              <!--Fotball-->
-            <div class="fotball mobileDivCard">
-                <div class="mobileImg">
-                    <img class="mobileImg" src="Assets/Fotball/fakeFotball.jpg"/>
-                </div>
-                <h3>Fotball</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis 
-                    molestias nesciunt rerum expedita optio quia, a qui voluptates 
-                    atque voluptatem. Lorem ipsum dolor sit amet.</p>
-                         <!-- Knapp til påmelding, kodet av Tiril -->
-                <button class="buttonRegistration"> 
-                    <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
-                </button>
-            </div>
-                <!--Håndball-->
-                <div class="handball mobileDivCard">
-                    <div class="mobileImg">
-                        <img class="mobileImg" src="Assets/Håndball/fakeHåndball (2).jpg"/>
-                        <!-- img(/s) and calendar -->
-                    </div>
-                    <h3>Håndball</h3>
-                    <p>Knarvik idrettslag har tilbod om handball til barn og ungdom, i barne- og 
-                        ungdomsskulealder.  
-
-                        Det er god hallkapasitet i Knarvik, og laga trenar i Knarvik Arena 
-                        (idrettsanlegget ved Knarvik barneskule) og i Nordhordlandshallen. 
-                        Handballgruppa er foreldredriven, og tilbodet er heilt avhengig av at 
-                        foreldre og føresette stiller opp og sikrar eit tilbod til eigne og andre 
-                        sine barn og unge, og på den måten bidrar til eit godt oppvekstmiljø.   
-                        
-                        Handball er ein actionfylt lagidrett som gir mykje speleglede, samhald 
-                        og meistring.  
-                        
-                        Kjenner du nokon som har lyst til å spela handball, ta kontakt med leiar 
-                        i Knarvik IL si handballgruppe, Arne Ramslien. </p>
-                    <!-- Knapp til påmelding, kodet av Tiril -->
-                    <button class="buttonRegistration"> 
-                        <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
-                    </button>
-                </div>
-            <!--Karate-->
-            <div class="karate mobileDivCard">
-                    <!-- tekst fra Gro Helen, fra KiL-->
-                    <div class="mobileImg"> 
-                        <img class="mobileImg imgKarate" src="Assets/Karate/karate_4.jpg" alt=""/>
-                        <!-- img(/s) and calendar -->
-                    </div>
-                    <h3>Shorin-Ryu Karate</h3>
-                    <p> Knarvik Shorin-Ryu Karate er en liten gruppe som trener tradisjonell 
-                        karate og kobudo (våpen) fra Okinawa. Vi møtes to ganger i uken, i 
-                        Knarvik Arena. Nye medlemmer fra 12 år og oppover er hjertelig velkommen. 
-                        Vi har fortløpende opptak.
-
-                        Kom gjerne og se på, eller tren med fra start. Du trenger ikke kunne noe 
-                        om kampsport eller kampkunst fra før av, eller å være sterk og i god form! 
-                        
-                        For mer informasjon, inkl. treningssted og -tider se <a href="https://www.knarvikkarate.no/" target="_blank">knarvikkarate.no </a></p>
-                        <p class="location">Lokale: Knarvik Arena</p>
-                        <p>Lonsvegen 80, 5914 Knarvik</p>
-                             <!-- Knapp til påmelding, kodet av Tiril -->
-                    <button class="buttonRegistration"> 
-                        <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
-                    </button>
-                        <!-- Legg in aktiv link til knarvikkarate.no -->
-            </div>
-            <!--Tur-Kano-->
-            <div class="turKano mobileDivCard">
-                <div class="mobileImg">
-                    <img class="mobileImg" src="Assets/TurKano/fakeKano.jpg" alt="">
-                </div>
-                <h3>Tur-Kano</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Atque nesciunt ullam ipsa quia optio soluta neque, cupiditate 
-                    voluptatem, facilis veritatis architecto ut eveniet ab quam dicta 
-                    reprehenderit voluptate. Veritatis, optio?</p>
-                <button class="buttonRegistration"> 
-                    <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
-                </button>
-            </div> 
-            <!--Idrettskule-->
-            <div class="idrettsskole mobileDivCard">
-                <div class="mobileImg">
-                    <img class="mobileImg" src="Assets/IdrettsSkole/fakeIdrett.jpg" alt="">
-                </div>
-                <h3>Idrettskule</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Atque nesciunt ullam ipsa quia optio soluta neque, cupiditate 
-                    voluptatem, facilis veritatis architecto ut eveniet ab quam dicta 
-                    reprehenderit voluptate. Veritatis, optio?</p>
-                <button class="buttonRegistration"> 
-                    <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
-                </button>
-            </div>
-            <!-- Orientering -->
-            <div class="orientering mobileDivCard">
-                <div class="mobileImg">
-                    <img class="mobileImg" src="Assets/Orientering/fakeOrient.jpg" alt="">
-                </div>
-                <h3>Orientering</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Atque nesciunt ullam ipsa quia optio soluta neque, cupiditate 
-                    voluptatem, facilis veritatis architecto ut eveniet ab quam dicta 
-                    reprehenderit voluptate. Veritatis, optio?</p>
-                <button class="buttonRegistration"> 
-                    <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
-                </button>
-            </div>
-            <!--Ski -->
-            <div class="ski mobileDivCard">
-                <div class="mobileImg">
-                    <img class="mobileImg" src="Assets/Ski/fakeSki.jpg" alt="">
-                </div>
-                <h3>Ski</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Atque nesciunt ullam ipsa quia optio soluta neque, cupiditate 
-                    voluptatem, facilis veritatis architecto ut eveniet ab quam dicta 
-                    reprehenderit voluptate. Veritatis, optio?</p>
-                <button class="buttonRegistration"> 
-                    <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
-                </button>
-            </div>
-            <!-- Frisbeegolf -->
-            <!-- <div class="frisbeegolf mobileDivCard">
-                <div class="mobileImg">
-                    <img class="imgFrisbeegolf" src="" alt="">
-                </div>
-                <h3></h3>
-                <p></p>
-                <button class="buttonRegistration"> 
-                    <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
-                </button>
-            </div> -->
-        </section>
-
-        <section class="sportsContainer">
-            <h3 class="calendar">Kalender</h3>
-            <div class="calendarApi divCard">
-                <img class="" src="Assets/Annet/fakeCalendar.jpg"/>
-            </div>
-            <!-- imgSplash: samleGalleri? -->
-            <!-- div: Åpen hall info -->
-            <div class="apenHall">
-                <h3>Åpen Hall</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iure vel possimus 
-                    repellendus molestiae eaque deleniti, necessitatibus dicta aspernatur, animi 
-                    temporibus harum quaerat, iusto perspiciatis doloribus ab consequuntur ducimus 
-                    reprehenderit!
-                    
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis consequuntur 
-                    voluptates laudantium. Delectus dolorem repellendus odio, aut nobis animi voluptas 
-                    natus ratione cumque? Et assumenda ipsa nemo officiis dolores consequatur! 
-                    Quo eveniet ex voluptatem architecto quia quod eos provident eius?</p>
-            </div>
-        </section>
-        <!-- div eller section for Politiattest-skjema link? -->
-    </main>
-
-    <footer>
-        <!-- Kodet av Tiril -->
-        <div class="contactInfo">
-            <div class="email">
-                <p class="space">
-                   E-post
-                </p>
-                <p>
-                    <a class="colorChange" href="mailto:leder@knarvikil.no">leder@knarvikil.no</a>
-                </p>
-            </div>
-            
-            <div class="adress">
-                <p class="space">
-                    Adresse
-                </p>
-                <p class="space">
-                    v/Grethe Hildegunn Midtgård <br> Haaland
-                </p>
-                <p>
-                    Røsvikrenen 7
-                </p>
-                <p>
-                    5914 ISDALSTØ
-                </p>
-            </div>
-
-            <div>
-                <p class="space">
-                    Organisasjonsnummer
-                </p>
-                <p>
-                    974 953 498
-                </p>
-            </div>
-
-            <div>
-                <p class="space">
-                    Foretaksnavn
-                </p>
-                <p>
-                    KNARVIK IDRETTSLAG
-                </p>  
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+                        <div class="imgBox">
+                            <img class="imgFotball imgDisplay" src="Assets/Fotball/fakeFotball.jpg"/>
+                            <!-- img(/s) and calendar --></div>
+                        </div>
+                        <!--Håndball-->
+                        <div id="handball" class="handball divCard">
+                            <div class="imgBox">
+                                <img class="imgHandball imgDisplay" src="Assets/Håndball/fakeHåndball (2).jpg"/>
+                                <!-- img(/s) and calendar --></div>
+                                <div class="infoCard">
+                                    <h3>Håndball</h3>
+                                    <p>Knarvik idrettslag har tilbod om handball til barn og ungdom, i barne- og 
+                                        ungdomsskulealder.  
+                                        
+                                        Det er god hallkapasitet i Knarvik, og laga trenar i Knarvik Arena 
+                                        (idrettsanlegget ved Knarvik barneskule) og i Nordhordlandshallen. 
+                                        Handballgruppa er foreldredriven, og tilbodet er heilt avhengig av at 
+                                        foreldre og føresette stiller opp og sikrar eit tilbod til eigne og andre 
+                                        sine barn og unge, og på den måten bidrar til eit godt oppvekstmiljø.   
+                                        
+                                        Handball er ein actionfylt lagidrett som gir mykje speleglede, samhald 
+                                        og meistring.  
+                                        
+                                        Kjenner du nokon som har lyst til å spela handball, ta kontakt med leiar 
+                                        i Knarvik IL si handballgruppe, Arne Ramslien. </p>
+                                        <!-- Knapp til påmelding, kodet av Tiril -->
+                                        <div class="position">
+                                            <button class="buttonRegistration"> 
+                                                <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Karate-->
+                                <div id="karate" class="karate divCard">
+                                    <div class="infoCard">
+                                        <!-- tekst fra Gro Helen, fra KiL-->
+                                        <h3>Shorin-Ryu Karate</h3>
+                                        <p> Knarvik Shorin-Ryu Karate er en liten gruppe som trener tradisjonell 
+                                            karate og kobudo (våpen) fra Okinawa. Vi møtes to ganger i uken, i 
+                                            Knarvik Arena. Nye medlemmer fra 12 år og oppover er hjertelig velkommen. 
+                                            Vi har fortløpende opptak.
+                                            
+                                            Kom gjerne og se på, eller tren med fra start. Du trenger ikke kunne noe 
+                                            om kampsport eller kampkunst fra før av, eller å være sterk og i god form! 
+                                            
+                                            For mer informasjon, inkl. treningssted og -tider se <a href="https://www.knarvikkarate.no/" target="_blank">knarvikkarate.no </a></p>
+                                            <p class="location">Lokale: Knarvik Arena</p>
+                                            <p>Lonsvegen 80, 5914 Knarvik</p>
+                                            <!-- Knapp til påmelding, kodet av Tiril -->
+                                            <button class="buttonRegistration"> 
+                                                <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
+                                            </button>
+                                            <!-- Legg in aktiv link til knarvikkarate.no -->
+                                        </div>
+                                        <div class="imgBox"> 
+                                            <img class="imgKarate imgDisplay" src="Assets/Karate/karate_5.jpg" alt=""/><!-- img(/s) and calendar --></div>
+                                        </div>
+                                        <!--Tur-Kano-->
+                                        <div id="turOgKano" class="turKano divCard">
+                                            <div class="imgBox">
+                                                <img class="imgTurKano imgDisplay" src="Assets/TurKano/fakeKano.jpg"/>
+                                                <!-- img(/s) and calendar --></div>
+                                                <div class="infoCard">
+                                                    <h3>Tur-Kano</h3>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                        Maxime aut eius optio dolorem dignissimos. Tenetur, inventore! 
+                                                        Error ullam autem sit voluptatibus praesentium in laudantium tempora.</p>
+                                                        <!-- Knapp til påmelding, kodet av Tiril -->
+                                                        <div class="position">
+                                                            <button class="buttonRegistration"> 
+                                                                <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Idrettsskole-->
+                                                <div id="idretsskole" class="idrettsskole divCard">
+                                                    <div class="infoCard">
+                                                        <h3>Idrettsskule</h3>
+                                                        <p>Idrettsskulen er eit tilbod til born i alderen 4-12 år. Målet er 
+                                                            å tilby allsidig aktivitet som vil skape idrettsglede, tilhørighet og mestring.
+                                                            
+                                                            Idrettsskulen tilbyr bading i Alversund symjehall annakvar fredag. 
+                                                            Borna i barnehagealder har og tilbod om trening og leik i Knarvik Arena annakvar 
+                                                            mandag.</p>
+                                                            <p class="location">Lokale: Knarvik Arena</p>
+                                                            <p>Lonsvegen 80, 5914 Knarvik</p>
+                                                            <!-- Knapp til påmelding, kodet av Tiril -->
+                                                            <button class="buttonRegistration"> 
+                                                                <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
+                                                            </button>
+                                                        </div>
+                                                        <div class="imgBox">
+                                                            <img class="imgIdrett imgDisplay" src="Assets/IdrettsSkole/fakeIdrett.jpg">
+                                                            <!-- img(/s) and calendar --></div>
+                                                        </div>
+                                                        <!--Orientering-->
+                                                        <div id="orientering" class="orientering divCard">
+                                                            <div class="imgBox">
+                                                                <img class="imgDisplay" src="Assets/Orientering/fakeOrient.jpg"/>
+                                                                <!-- img(/s) and calendar --></div>
+                                                                <div class="infoCard">
+                                                                    <h3>Orientering</h3>
+                                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                                                        Ipsa eveniet deleniti non quibusdam unde quaerat aliquam accusantium 
+                                                                        dolores beatae omnis temporibus, voluptatem molestiae!
+                                                                    </p>
+                                                                    <!-- Knapp til påmelding, kodet av Tiril -->
+                                                                    <div class="position">
+                                                                        <button class="buttonRegistration"> 
+                                                                            <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--Ski-->
+                                                        <div id="ski" class="ski divCard"> 
+                                                            <div class="infoCard">
+                                                                <h3>Ski</h3>
+                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                                    Omnis harum assumenda eos tempora accusamus perferendis adipisci 
+                                                                    rem fugit quo repudiandae hic odio natus, veniam eaque.</p>
+                                                                    <!-- Knapp til påmelding, kodet av Tiril -->
+                                                                    <button class="buttonRegistration"> 
+                                                                        <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="imgBox"> 
+                                                                    <img class="imgDisplay" src="Assets/Ski/fakeSki.jpg"/> 
+                                                                    <!-- img(/s) and calendar -->  </div>
+                                                                </div>
+                                                                <!-- Frisbeegolf
+                                                                <div class="sport7 divCard">  
+                                                                    <div class="imgBox">  <- img(/s) and calendar ->  </div>
+                                                                    <div class="infoCard">
+                                                                        <h3></h3>
+                                                                        <p></p>
+                                                                        <!- Knapp til påmelding, kodet av Tiril ->
+                                                                        <button class="buttonRegistration"> 
+                                                                            <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
+                                                                        </button>
+                                                                    </div>
+                                                                </div> -->
+                                                                
+                                                            </section>
+                                                            <section class="mobileDisplay">
+                                                                <!-- Mobile display divCards-->
+                                                                <!--Fotball-->
+                                                                <div class="fotball mobileDivCard">
+                                                                    <div class="mobileImg">
+                                                                        <img class="mobileImg" src="Assets/Fotball/fakeFotball.jpg"/>
+                                                                    </div>
+                                                                    <h3>Fotball</h3>
+                                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis 
+                                                                        molestias nesciunt rerum expedita optio quia, a qui voluptates 
+                                                                        atque voluptatem. Lorem ipsum dolor sit amet.</p>
+                                                                        <!-- Knapp til påmelding, kodet av Tiril -->
+                                                                        <button class="buttonRegistration"> 
+                                                                            <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
+                                                                        </button>
+                                                                    </div>
+                                                                    <!--Håndball-->
+                                                                    <div class="handball mobileDivCard">
+                                                                        <div class="mobileImg">
+                                                                            <img class="mobileImg" src="Assets/Håndball/fakeHåndball (2).jpg"/>
+                                                                            <!-- img(/s) and calendar -->
+                                                                        </div>
+                                                                        <h3>Håndball</h3>
+                                                                        <p>Knarvik idrettslag har tilbod om handball til barn og ungdom, i barne- og 
+                                                                            ungdomsskulealder.  
+                                                                            
+                                                                            Det er god hallkapasitet i Knarvik, og laga trenar i Knarvik Arena 
+                                                                            (idrettsanlegget ved Knarvik barneskule) og i Nordhordlandshallen. 
+                                                                            Handballgruppa er foreldredriven, og tilbodet er heilt avhengig av at 
+                                                                            foreldre og føresette stiller opp og sikrar eit tilbod til eigne og andre 
+                                                                            sine barn og unge, og på den måten bidrar til eit godt oppvekstmiljø.   
+                                                                            
+                                                                            Handball er ein actionfylt lagidrett som gir mykje speleglede, samhald 
+                                                                            og meistring.  
+                                                                            
+                                                                            Kjenner du nokon som har lyst til å spela handball, ta kontakt med leiar 
+                                                                            i Knarvik IL si handballgruppe, Arne Ramslien. </p>
+                                                                            <!-- Knapp til påmelding, kodet av Tiril -->
+                                                                            <button class="buttonRegistration"> 
+                                                                                <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
+                                                                            </button>
+                                                                        </div>
+                                                                        <!--Karate-->
+                                                                        <div class="karate mobileDivCard">
+                                                                            <!-- tekst fra Gro Helen, fra KiL-->
+                                                                            <div class="mobileImg"> 
+                                                                                <img class="mobileImg imgKarate" src="Assets/Karate/karate_4.jpg" alt=""/>
+                                                                                <!-- img(/s) and calendar -->
+                                                                            </div>
+                                                                            <h3>Shorin-Ryu Karate</h3>
+                                                                            <p> Knarvik Shorin-Ryu Karate er en liten gruppe som trener tradisjonell 
+                                                                                karate og kobudo (våpen) fra Okinawa. Vi møtes to ganger i uken, i 
+                                                                                Knarvik Arena. Nye medlemmer fra 12 år og oppover er hjertelig velkommen. 
+                                                                                Vi har fortløpende opptak.
+                                                                                
+                                                                                Kom gjerne og se på, eller tren med fra start. Du trenger ikke kunne noe 
+                                                                                om kampsport eller kampkunst fra før av, eller å være sterk og i god form! 
+                                                                                
+                                                                                For mer informasjon, inkl. treningssted og -tider se <a href="https://www.knarvikkarate.no/" target="_blank">knarvikkarate.no </a></p>
+                                                                                <p class="location">Lokale: Knarvik Arena</p>
+                                                                                <p>Lonsvegen 80, 5914 Knarvik</p>
+                                                                                <!-- Knapp til påmelding, kodet av Tiril -->
+                                                                                <button class="buttonRegistration"> 
+                                                                                    <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
+                                                                                </button>
+                                                                                <!-- Legg in aktiv link til knarvikkarate.no -->
+                                                                            </div>
+                                                                            <!--Tur-Kano-->
+                                                                            <div class="turKano mobileDivCard">
+                                                                                <div class="mobileImg">
+                                                                                    <img class="mobileImg" src="Assets/TurKano/fakeKano.jpg" alt="">
+                                                                                </div>
+                                                                                <h3>Tur-Kano</h3>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                                                    Atque nesciunt ullam ipsa quia optio soluta neque, cupiditate 
+                                                                                    voluptatem, facilis veritatis architecto ut eveniet ab quam dicta 
+                                                                                    reprehenderit voluptate. Veritatis, optio?</p>
+                                                                                    <button class="buttonRegistration"> 
+                                                                                        <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
+                                                                                    </button>
+                                                                                </div> 
+                                                                                <!--Idrettskule-->
+                                                                                <div class="idrettsskole mobileDivCard">
+                                                                                    <div class="mobileImg">
+                                                                                        <img class="mobileImg" src="Assets/IdrettsSkole/fakeIdrett.jpg" alt="">
+                                                                                    </div>
+                                                                                    <h3>Idrettskule</h3>
+                                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                                                        Atque nesciunt ullam ipsa quia optio soluta neque, cupiditate 
+                                                                                        voluptatem, facilis veritatis architecto ut eveniet ab quam dicta 
+                                                                                        reprehenderit voluptate. Veritatis, optio?</p>
+                                                                                        <button class="buttonRegistration"> 
+                                                                                            <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                    <!-- Orientering -->
+                                                                                    <div class="orientering mobileDivCard">
+                                                                                        <div class="mobileImg">
+                                                                                            <img class="mobileImg" src="Assets/Orientering/fakeOrient.jpg" alt="">
+                                                                                        </div>
+                                                                                        <h3>Orientering</h3>
+                                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                                                            Atque nesciunt ullam ipsa quia optio soluta neque, cupiditate 
+                                                                                            voluptatem, facilis veritatis architecto ut eveniet ab quam dicta 
+                                                                                            reprehenderit voluptate. Veritatis, optio?</p>
+                                                                                            <button class="buttonRegistration"> 
+                                                                                                <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                        <!--Ski -->
+                                                                                        <div class="ski mobileDivCard">
+                                                                                            <div class="mobileImg">
+                                                                                                <img class="mobileImg" src="Assets/Ski/fakeSki.jpg" alt="">
+                                                                                            </div>
+                                                                                            <h3>Ski</h3>
+                                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                                                                Atque nesciunt ullam ipsa quia optio soluta neque, cupiditate 
+                                                                                                voluptatem, facilis veritatis architecto ut eveniet ab quam dicta 
+                                                                                                reprehenderit voluptate. Veritatis, optio?</p>
+                                                                                                <button class="buttonRegistration"> 
+                                                                                                    <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                            <!-- Frisbeegolf -->
+                                                                                            <!-- <div class="frisbeegolf mobileDivCard">
+                                                                                                <div class="mobileImg">
+                                                                                                    <img class="imgFrisbeegolf" src="" alt="">
+                                                                                                </div>
+                                                                                                <h3></h3>
+                                                                                                <p></p>
+                                                                                                <button class="buttonRegistration"> 
+                                                                                                    <a class="buttonRegistrationLink" target="_blank" href="https://club.spond.com/landing/signup/knarvikil/form/88A42191BF084042959FB10E2687B1D2">Bli medlem</a>
+                                                                                                </button>
+                                                                                            </div> -->
+                                                                                        </section>
+                                                                                        
+                                                                                        <section class="sportsContainer">
+                                                                                            <h3 class="calendar">Kalender</h3>
+                                                                                            <div class="calendarApi divCard">
+                                                                                                <img class="" src="Assets/Annet/fakeCalendar.jpg"/>
+                                                                                            </div>
+                                                                                            <!-- imgSplash: samleGalleri? -->
+                                                                                            <!-- div: Åpen hall info -->
+                                                                                            <div class="apenHall">
+                                                                                                <h3>Åpen Hall</h3>
+                                                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iure vel possimus 
+                                                                                                    repellendus molestiae eaque deleniti, necessitatibus dicta aspernatur, animi 
+                                                                                                    temporibus harum quaerat, iusto perspiciatis doloribus ab consequuntur ducimus 
+                                                                                                    reprehenderit!
+                                                                                                    
+                                                                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis consequuntur 
+                                                                                                    voluptates laudantium. Delectus dolorem repellendus odio, aut nobis animi voluptas 
+                                                                                                    natus ratione cumque? Et assumenda ipsa nemo officiis dolores consequatur! 
+                                                                                                    Quo eveniet ex voluptatem architecto quia quod eos provident eius?</p>
+                                                                                                </div>
+                                                                                            </section>
+                                                                                            <!-- div eller section for Politiattest-skjema link? -->
+                                                                                        </main>
+                                                                                        
+                                                                                        <footer>
+                                                                                            <!-- Kodet av Tiril -->
+                                                                                            <div class="contactInfo">
+                                                                                                <div class="email">
+                                                                                                    <p class="space">
+                                                                                                        E-post
+                                                                                                    </p>
+                                                                                                    <p>
+                                                                                                        <a class="colorChange" href="mailto:leder@knarvikil.no">leder@knarvikil.no</a>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                                
+                                                                                                <div class="adress">
+                                                                                                    <p class="space">
+                                                                                                        Adresse
+                                                                                                    </p>
+                                                                                                    <p class="space">
+                                                                                                        v/Grethe Hildegunn Midtgård <br> Haaland
+                                                                                                    </p>
+                                                                                                    <p>
+                                                                                                        Røsvikrenen 7
+                                                                                                    </p>
+                                                                                                    <p>
+                                                                                                        5914 ISDALSTØ
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                                
+                                                                                                <div>
+                                                                                                    <p class="space">
+                                                                                                        Organisasjonsnummer
+                                                                                                    </p>
+                                                                                                    <p>
+                                                                                                        974 953 498
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                                
+                                                                                                <div>
+                                                                                                    <p class="space">
+                                                                                                        Foretaksnavn
+                                                                                                    </p>
+                                                                                                    <p>
+                                                                                                        KNARVIK IDRETTSLAG
+                                                                                                    </p>  
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </footer>
+                                                                                    </body>
+                                                                                    </html>

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap");
+
+:root {
+    --col_fg: black;
+
+    --col_bg: white;
+
+    --col_tonic: #d90000;
+
+    --col_alt: #414141;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    color: var(--col_fg) !important;
+}
+
+/* DARK/LIGHT-TOGGLE */
+
+svg {
+    fill: var(--col_bg);
+    stroke: var(--col_bg);
+    width: 48px !important;
+    height: 48px !important;
+}

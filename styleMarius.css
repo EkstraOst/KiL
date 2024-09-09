@@ -1,47 +1,53 @@
-/*Styling kode til navbar og light/dark mode, kodet av Marius Moldeklev*/
+/*Rydding i vill fart av Duck McKvakk aka Cheddar McBrie*/
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
+    color: var(--col_fg);
+    transition: color 0.3s ease-out, background 0.3s ease-out;
 }
 
 :root {
-    --main-red:#D90000; 
-    --hover-red: #fd0101;
-    --grey: #E5E5E4;
-    --drop-grey: #445964;
-    /*dark mode*/
-    --dark-grey: #414141;
-    --white: #fff;
+    --col_fg: black;
+    --col_bg: white;
+    --col_tonic: #d90000;
+    --col_alt: #414141;
+
+    --col_fg_bak: white;
+    --col_bg_bak: black;
+    --col_tonic_bak: #d90000;
+    --col_alt_bak: #b1b1b1;
 }
 
 /* .borderBackground {
     border: solid 2px #c55353;
     box-shadow: 0px 0px 30px #5f0505;
-}
-*/
+} */
 
+/* 
 .lightToggle {
-   border-radius: 10%;
-} 
+    border-radius: 10%;
+}
 .lightToggle:hover {
-    background: var(--hover-red);
+    background: var(--color_tonic);
     /* box-shadow: 0px 0px 10px #5f0505; */
-    border-radius: 15%;
+/* border-radius: 15%;
+} */
+
+.dark #sun {
+    width: 0%;
+    overflow: hidden;
 }
 
-.moonIcon {
+div.dark svg:first-child {
     display: none;
-    cursor: pointer;
 }
-
-.sunIcon {
-    z-index: 10;
+div.light svg:nth-child(2) {
     display: none;
-    cursor: pointer;
 }
 
 .divHeaderSpacing {
@@ -53,12 +59,12 @@
 
 body {
     min-height: 100vh;
-    background: var(--grey);
+    background: var(--col_bg);
 }
 
-.darkMode {
+/* .darkMode {
     background: var(--dark-grey);
-    color: var(--white);
+    color: var(-bg);
     .divCard {
         border: 1px solid var(--grey);
         border-radius: 10px;
@@ -67,25 +73,24 @@ body {
         border: 1px solid var(--grey);
         border-radius: 10px;
     }
-}
+} */
 .logoSmall {
- display: none;   
+    display: none;
 }
 header {
     z-index: 2;
     position: absolute;
     width: 100%;
     min-height: 66px;
-    background-image: linear-gradient(to bottom right, var(--main-red) 60%, rgb(191, 220, 228));
-    /* background: #D90000; */
-    padding: 0 100px;
+    background: var(--col_tonic);
+    padding: 0 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 header .logo {
-    color: var(--white);
+    color: var(--col_fg);
     font-size: 1.75em;
     font-weight: 600;
     text-decoration: none;
@@ -102,17 +107,20 @@ header ul li {
 }
 
 header ul li a {
-    text-shadow:  4px 4px 2px black;
-    color: var(--white);
+    text-shadow: 1px 1px 2px var(--col_fg);
+    color: var(--col_bg);
     font-size: 1.1em;
     padding: 20px 25px;
     text-decoration: none;
     display: flex;
-    justify-content:  space-between;
+    justify-content: space-between;
+}
+header ul li a b {
+    color: var(--col_bg);
 }
 
 header ul li a:hover {
-    background: var(--hover-red);
+    background: var(--col_tonic);
 }
 
 header ul li ul {
@@ -120,7 +128,7 @@ header ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background: var(--drop-grey);
+    background: var(--col_alt);
     display: none;
     -webkit-transition: height 0.3s ease;
     transition: height 0.3s ease;
@@ -128,14 +136,14 @@ header ul li ul {
 
 @keyframes fadeInDown {
     from {
-      opacity: 0;
-      transform: translateY(-10px);
+        opacity: 0;
+        transform: translateY(-10px);
     }
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
+}
 
 header ul li:hover ul {
     display: block;
@@ -146,7 +154,7 @@ header ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background: var(--drop-grey);
+    background: var(--col_alt);
     display: none;
     -webkit-transition: height 0.3s ease;
     transition: height 0.3s ease;
@@ -154,14 +162,14 @@ header ul li ul {
 
 @keyframes fadeInDown {
     from {
-      opacity: 0;
-      transform: translateY(-10px);
+        opacity: 0;
+        transform: translateY(-10px);
     }
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
+}
 
 header ul li:hover ul {
     display: block;
@@ -171,23 +179,23 @@ header ul li:hover ul {
 header ul li ul li {
     position: relative;
     width: 100%;
-    border:  1px solid rgba(0,0,0,0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 header ul li ul li ul {
-    top:  0;
+    top: 0;
     left: 200px;
 }
 
 @media (max-width: 900px) {
-.logo{
-    display: none;
-}
-.logoSmall {
-    display: block;
-    height: 75px;
-}
-    header{
+    .logo {
+        display: none;
+    }
+    .logoSmall {
+        display: block;
+        height: 75px;
+    }
+    header {
         padding: 10px 20px;
     }
     header nav {
@@ -195,11 +203,11 @@ header ul li ul li ul {
         width: 100%;
         top: 95px;
         left: 0;
-        background: var(--drop-grey);
+        background: var(--col_alt);
         display: none;
     }
     header.active nav {
-        display: initial; 
+        display: initial;
     }
     header nav ul li {
         width: 100%;
@@ -215,7 +223,7 @@ header ul li ul li ul {
     }
 
     header nav ul li:hover ul li {
-        background: var(--drop-grey);
+        background: var(--col_alt);
     }
     .menuToggle {
         position: relative;
@@ -228,28 +236,28 @@ header ul li ul li ul {
     }
 
     .menuToggle::before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 3px;
-        background: var(--white);
+        background: var(--col_fg);
         transform: translateY(-12px);
-        box-shadow: 0 12px var(--white);
+        box-shadow: 0 12px var(--col_fg);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .menuToggle::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 3px;
-        background: var(--white);
+        background: var(--col_fg);
         transform: translateY(12px);
         transition: transform 0.3s ease; /* Added transition for transform */
     }
 
     header.active .menuToggle::before {
         transform: rotate(45deg);
-        box-shadow: 0 0 var(--white);
+        box-shadow: 0 0 var(--col_fg);
     }
 
     header.active .menuToggle::after {
@@ -271,68 +279,68 @@ header ul li ul li ul {
     align-items: flex-end;
     opacity: 0;
     transition: opacity 0.5s ease;
-  }
-  
-  .side-icon {
+}
+
+.side-icon {
     width: 40px;
     height: 40px;
-    color: var(--white);
+    color: var(--col_fg);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
     cursor: pointer;
     transition: 0.4s;
-  }
-  
-  .side-icon img {
+}
+
+.side-icon img {
     max-width: 100%;
     max-height: 100%;
     border-radius: 20%;
-  }
-  
-  .side-icon:hover {
+}
+
+.side-icon:hover {
     scale: 2;
-  }
-  
+}
+
 .id-name-display {
     position: fixed;
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--col_fg);
     padding: 5px;
     border-radius: 5px;
     font-weight: bold;
     display: none;
-  }
-  
-  .side-icon .icon-text {
+}
+
+.side-icon .icon-text {
     position: absolute;
     bottom: 20%;
     left: -140%;
     transform: translateX(-30%);
-    background-color: #333;
-    color: var(--white);
+    background-color: var(--col_alt);
+    color: var(--col_fg);
     padding: 0px;
     border-radius: 1px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-  }
-  
-  .side-icon:hover .icon-text {
+}
+
+.side-icon:hover .icon-text {
     opacity: 1;
-  }
-  
-  .colorChange {
-    color: var(--white);
+}
+
+.colorChange {
+    color: var(--col_fg);
     font-size: 20px;
     /* background-color: black; */
-  }
-  .colorChange:hover {
+}
+.colorChange:hover {
     cursor: pointer;
-  }
+}
 
-  .boxBorder {
+.boxBorder {
     border: none;
-  }
+}
